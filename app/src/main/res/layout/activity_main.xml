@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/CadetBlue"
+    android:background="#FF78C4"
     tools:context=".MainActivity">
 
 
@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:fontFamily="@font/comic_bold"
+        android:fontFamily="@font/poppins_semibold"
         android:text="Masapuan"
         android:textAlignment="center"
         android:textColor="@color/White"
@@ -28,7 +28,7 @@
         android:layout_width="283dp"
         android:layout_height="116dp"
         android:layout_marginTop="44dp"
-        android:fontFamily="@font/comic_regular"
+        android:fontFamily="@font/poppins_regular"
         android:text="Aplikasi yang dibangun untuk membantu penderita anemia"
         android:textAlignment="center"
         android:textColor="@color/White"

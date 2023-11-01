@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/CadetBlue"
+    android:background="#FF78C4"
     tools:context=".Login">
 
 
@@ -52,7 +52,7 @@
                         android:ems="10"
                         android:textSize="13sp"
                         android:textColor="@color/Black"
-                        android:fontFamily="@font/comic_regular"
+                        android:fontFamily="@font/poppins_regular"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -74,7 +74,7 @@
                         android:ems="10"
                         android:textSize="13sp"
                         android:textColor="@color/Black"
-                        android:fontFamily="@font/comic_regular"
+                        android:fontFamily="@font/poppins_regular"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -83,7 +83,7 @@
             <Button
                 android:id="@+id/btn_login"
                 android:text="Login"
-                android:fontFamily="@font/comic_bold"
+                android:fontFamily="@font/poppins_semibold"
                 android:textSize="20sp"
                 android:textAllCaps="false"
                 android:elevation="15dp"
@@ -91,7 +91,7 @@
                 android:textColor="@color/TextColor"
                 android:layout_gravity="center"
                 android:background="@drawable/btn_background"
-                app:backgroundTint="@color/CadetBlue"
+                app:backgroundTint="#FF78C4"
                 android:layout_marginStart="24dp"
                 android:layout_marginEnd="24dp"
                 android:layout_width="match_parent"
@@ -102,7 +102,7 @@
                 android:textSize="16sp"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="14dp"
-                android:fontFamily="@font/comic_regular"
+                android:fontFamily="@font/poppins_regular"
                 android:textColor="#474646"
                 android:layout_gravity="center"
                 android:gravity="center"
