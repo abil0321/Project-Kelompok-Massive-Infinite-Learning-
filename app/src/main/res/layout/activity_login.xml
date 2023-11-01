@@ -129,7 +129,7 @@
     </androidx.cardview.widget.CardView>
 
     <ImageView
-        android:layout_width="325dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/register" />
 
