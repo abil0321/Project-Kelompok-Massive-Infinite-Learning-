@@ -14,6 +14,7 @@ import androidx.fragment.app.Fragment
 import com.example.massive.databinding.ActivityDashboardBinding
 
 class Dashboard : AppCompatActivity() {
+
     private lateinit var binding: ActivityDashboardBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
