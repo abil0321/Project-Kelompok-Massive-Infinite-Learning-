@@ -23,14 +23,6 @@ class Dashboard : AppCompatActivity() {
         setContentView(binding.root)
         replaceFragment(Home())
 
-        val view = View.inflate(this@Dashboard, R.layout.notif, null)
-        val builder = AlertDialog.Builder(this@Dashboard)
-        builder.setView(view)
-
-        val dialog = builder.create()
-        dialog.show()
-        dialog.window?.setBackgroundDrawableResource(android.R.color.transparent)
-
         binding.topNavigationView.setOnItemSelectedListener {
             when(it.itemId){
                 R.id.home -> replaceFragment(Home())
