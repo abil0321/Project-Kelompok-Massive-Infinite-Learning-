@@ -3,14 +3,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/nutrisi"
     tools:context=".Nutrisi">
 
-    <TextView
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
         android:textAlignment="center"
-        android:textSize="30sp"
-        android:text="Nutrisi" />
+        app:itemTextColor="@color/Black"
+        app:itemBackground="@color/TransparentColor"
+        android:background="@drawable/btn_background"
+        app:menu="@menu/mid_nav"/>
 
 </FrameLayout>
