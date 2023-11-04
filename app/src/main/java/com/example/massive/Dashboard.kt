@@ -24,7 +24,7 @@ import com.example.massive.databinding.ActivityDashboardBinding
 import com.google.android.material.navigation.NavigationView
 
 class Dashboard : AppCompatActivity() {
-    private lateinit var dashboard: TextView
+
     private lateinit var binding: ActivityDashboardBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -33,7 +33,9 @@ class Dashboard : AppCompatActivity() {
         setContentView(binding.root)
         replaceFragment(Home())
 
-        dashboard = findViewById(R.id.dashboard)
+        binding.tvProfile.setOnClickListener {
+            startActivity(Intent(this, Profile::class.java))
+        }
 
         binding.topNavigationView.setOnItemSelectedListener {
             when(it.itemId){
@@ -55,32 +57,5 @@ class Dashboard : AppCompatActivity() {
         val fragmentTransaction = fragmentManager.beginTransaction()
         fragmentTransaction.replace(R.id.frameLayout,fragment)
         fragmentTransaction.commit()
-    }
-    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        val inflater:MenuInflater = menuInflater
-        inflater.inflate(R.menu.side_nav,menu)
-        return true
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        return when(item.itemId){
-            R.id.id_tentang_kami -> {
-                dashboard.text = "Tentang Kami Click"
-                true
-            }
-            R.id.id_layanan_konsumen -> {
-                dashboard.text = "Layanan Konsumen Click"
-                true
-            }
-            R.id.id_pengaturan -> {
-                dashboard.text = "Pengaturan Click"
-                true
-            }
-            R.id.id_logout -> {
-                dashboard.text = "Logout click"
-                true
-            }
-            else -> super.onOptionsItemSelected(item)
-        }
     }
 }
