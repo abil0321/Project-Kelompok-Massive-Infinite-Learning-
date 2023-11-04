@@ -1,8 +1,10 @@
 package com.example.massive
 
+import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.example.massive.databinding.ActivityAnemiaStatusBinding
 import com.github.mikephil.charting.charts.LineChart
 import com.github.mikephil.charting.charts.RadarChart
 import com.github.mikephil.charting.components.Description
@@ -15,10 +17,16 @@ import com.github.mikephil.charting.data.RadarEntry
 import com.github.mikephil.charting.utils.ColorTemplate
 
 class AnemiaStatus : AppCompatActivity() {
+    lateinit var binding: ActivityAnemiaStatusBinding
     lateinit var anemiaStatus: AnemiaStatus
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_anemia_status)
+        binding = ActivityAnemiaStatusBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        binding.icBack.setOnClickListener {
+            startActivity(Intent(this, Dashboard::class.java))
+        }
         // Find the LineChart view by its ID
         val lineChart = findViewById<LineChart>(R.id.line_chart)
 
@@ -31,7 +39,7 @@ class AnemiaStatus : AppCompatActivity() {
         entries.add(Entry(5f, 7f))
 
         // Create a LineDataSet to represent the data
-        val dataSet = LineDataSet(entries, "My Line Chart")
+        val dataSet = LineDataSet(entries, "My Data")
         dataSet.color = Color.BLUE
         dataSet.setCircleColor(Color.RED)
         dataSet.lineWidth = 2f
@@ -46,7 +54,7 @@ class AnemiaStatus : AppCompatActivity() {
         lineChart.setTouchEnabled(true)
         lineChart.setPinchZoom(true)
         lineChart.description = Description().apply {
-            text = "Line Chart Example"
+            text = "Data HB"
         }
         lineChart.invalidate()
     }

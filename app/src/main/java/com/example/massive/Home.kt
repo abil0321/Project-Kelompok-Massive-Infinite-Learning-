@@ -1,5 +1,6 @@
 package com.example.massive
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -10,6 +11,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.Toast
+import com.example.massive.databinding.ActivityAnemiaStatusBinding
 import com.example.massive.databinding.FragmentHomeBinding
 
 class Home : Fragment() {
@@ -21,6 +23,7 @@ class Home : Fragment() {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_home, container, false)
     }
+
     //enable options menu in this fragment
     override fun onCreate(savedInstanceState: Bundle?) {
         setHasOptionsMenu(true)
