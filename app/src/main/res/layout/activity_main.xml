@@ -25,8 +25,8 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="283dp"
-        android:layout_height="116dp"
+        android:layout_width="281dp"
+        android:layout_height="144dp"
         android:layout_marginTop="44dp"
         android:fontFamily="@font/poppins_regular"
         android:text="Aplikasi yang dibangun untuk membantu penderita anemia"

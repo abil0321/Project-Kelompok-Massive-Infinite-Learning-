@@ -19,7 +19,8 @@
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:padding="15dp">
 
             <TextView
                 android:layout_width="match_parent"
@@ -43,10 +44,10 @@
                     android:orientation="horizontal">
 
                     <TextView
-                        android:layout_width="5dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="0.4"
-                        android:layout_marginStart="140dp"
+                        android:layout_weight="0.2"
+                        android:layout_marginStart="100dp"
                         android:gravity="center"
                         android:fontFamily="@font/poppins_regular"
                         android:textSize="15sp"
@@ -56,12 +57,13 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginEnd="0dp"
+                        android:textAlignment="textStart"
                         android:layout_weight="1"
-                        android:layout_marginEnd="100dp"
-                        android:textColor="@color/Black"
                         android:fontFamily="@font/poppins_semibold"
-                        android:textSize="60sp"
-                        android:text="0" />
+                        android:text="0"
+                        android:textColor="@color/Black"
+                        android:textSize="60sp" />
 
                 </LinearLayout>
 
@@ -80,28 +82,38 @@
                         android:textColor="@color/Black"
                         android:text="Baik"/>
 
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="70px"
+                        android:padding="10dp">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btn_status_anemia"
+                            style="@android:style/Widget.Button"
+                            android:layout_width="210dp"
+                            android:layout_height="49dp"
+                            android:padding="8dp"
+                            android:background="@drawable/btn_background"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:text="Cek Anemia Status"
+                            android:textColor="@color/Black"
+                            android:textSize="20sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
                 </LinearLayout>
 
             </LinearLayout>
 
         </LinearLayout>
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn_status_anemia"
-            style="@android:style/Widget.Button"
-            android:layout_width="210dp"
-            android:layout_height="32dp"
-            android:layout_marginStart="92dp"
-            android:layout_marginLeft="100dp"
-            android:layout_marginTop="230dp"
-            android:layout_marginBottom="30dp"
-            android:background="@drawable/btn_background"
-            android:text="Cek Anemia Status"
-            android:fontFamily="@font/poppins_semibold"
-            android:textColor="@color/Black"
-            android:textSize="20sp"
-            app:layout_constraintHorizontal_bias="0.0" />
 
     </androidx.cardview.widget.CardView>
+
 
 </FrameLayout>
