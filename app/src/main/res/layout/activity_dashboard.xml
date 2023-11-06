@@ -26,7 +26,7 @@
             android:layout_weight="1"
             android:fontFamily="@font/poppins_semibold"
             android:text="Masapuan"
-            android:textAlignment="center"
+            android:textAlignment="textEnd"
             android:textColor="@color/TextColor"
             android:textSize="30sp" />
 
@@ -34,18 +34,10 @@
             android:id="@+id/tv_notif"
             android:layout_width="0dp"
             android:layout_height="25dp"
-            android:layout_marginLeft="50dp"
+            android:layout_marginLeft="20dp"
             android:layout_marginTop="20dp"
             android:layout_weight="1"
             android:src="@drawable/ic_notif" />
-        <ImageView
-            android:id="@+id/tv_profile"
-            android:layout_width="0dp"
-            android:layout_height="40dp"
-            android:layout_marginRight="50dp"
-            android:layout_marginTop="20dp"
-            android:layout_weight="1"
-            android:src="@drawable/karakter" />
 
     </LinearLayout>
 

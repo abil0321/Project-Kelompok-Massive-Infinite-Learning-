@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    tools:showIn="navigation_view"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_aboutUs"
+            android:title="About Us"
+            android:icon="@drawable/ic_info"/>
+
+        <item
+            android:id="@+id/nav_layanan"
+            android:title="Layanan Konsumen"
+            android:icon="@drawable/ic_customer_service"/>
+
+        <item
+            android:id="@+id/nav_pengaturan"
+            android:title="pengaturan"
+            android:icon="@drawable/ic_setting"/>
+
+        <item
+            android:id="@+id/nav_logout"
+            android:title="Logout"
+            android:icon="@drawable/ic_logout"/>
+
+    </group>
+
+</menu>

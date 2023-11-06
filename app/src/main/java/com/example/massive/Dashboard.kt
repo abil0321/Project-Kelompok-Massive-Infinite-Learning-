@@ -33,10 +33,6 @@ class Dashboard : AppCompatActivity() {
         setContentView(binding.root)
         replaceFragment(Home())
 
-        binding.tvProfile.setOnClickListener {
-            startActivity(Intent(this, Profile::class.java))
-        }
-
         binding.topNavigationView.setOnItemSelectedListener {
             when(it.itemId){
                 R.id.home -> replaceFragment(Home())
