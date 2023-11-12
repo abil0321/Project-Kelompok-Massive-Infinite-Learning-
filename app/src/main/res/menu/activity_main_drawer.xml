@@ -8,20 +8,9 @@
         android:checkableBehavior="single">
 
         <item
-            android:id="@+id/nav_aboutUs"
-            android:title="About Us"
-            android:icon="@drawable/ic_info"/>
-
-        <item
-            android:id="@+id/nav_layanan"
-            android:title="Layanan Konsumen"
-            android:icon="@drawable/ic_customer_service"/>
-
-        <item
-            android:id="@+id/nav_pengaturan"
-            android:title="pengaturan"
-            android:icon="@drawable/ic_setting"/>
-
+            android:id="@+id/nav_home"
+            android:title="Home"
+            android:icon="@drawable/ic_home"/>
         <item
             android:id="@+id/nav_logout"
             android:title="Logout"
