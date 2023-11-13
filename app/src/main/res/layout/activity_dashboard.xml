@@ -16,15 +16,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:text="Ciura"
-            android:textSize="24sp"
-            android:textAlignment="center"
-            android:fontFamily="@font/poppins_semibold"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="10dp"
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            app:srcCompat="@drawable/ic_person" />
+
+        <ImageView
+            android:paddingLeft="10dp"
+            android:layout_gravity="center"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="25dp"
+            android:src="@drawable/ciura" />
 
     </LinearLayout>
 
@@ -42,10 +45,12 @@
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
         android:background="@drawable/btn_nav"
-        android:layout_width="330dp"
+        android:layout_width="300dp"
         android:layout_height="65dp"
         android:layout_marginBottom="10dp"
         app:menu="@menu/bottom_nav"
+        app:itemIconTint="@color/White"
+        app:itemActiveIndicatorStyle="@color/TransparentColor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

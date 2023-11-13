@@ -5,10 +5,90 @@
     android:layout_height="match_parent"
     tools:context=".Home">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
+        android:background="@drawable/background_utama"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="330dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginLeft="40dp"
+            android:text="Status Anemia"
+            android:textSize="16sp"
+            android:fontFamily="@font/poppins_semibold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="130dp">
+
+            <TextView
+                android:text="Lv"
+                android:textSize="20sp"
+                android:textColor="#EE0D50"
+                android:fontFamily="@font/poppins_semibold"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="0"
+                android:textSize="100sp"
+                android:textColor="#EE0D50"
+                android:fontFamily="@font/poppins_semibold"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Ringan"
+                android:textSize="32sp"
+                android:textColor="@color/Black"
+                android:fontFamily="@font/poppins_semibold"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="false"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:progress="10"
+                android:progressDrawable="@drawable/linear_progress_bar" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_perbaharui"
+                android:text="Perbaharui"
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="13sp"
+                android:gravity="center"
+                android:textColor="@color/TextColor"
+                android:layout_gravity="center"
+                android:background="@drawable/btn_background"
+                android:layout_marginStart="100dp"
+                android:layout_marginEnd="100dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
 
 </FrameLayout>
