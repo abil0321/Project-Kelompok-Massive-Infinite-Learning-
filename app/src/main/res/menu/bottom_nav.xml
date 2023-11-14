@@ -1,32 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <group>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
-        <item
-            android:id="@+id/home"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:icon="@drawable/ic_home"
-            android:title=""/>
-        <item
-            android:id="@+id/nutrisi"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:icon="@drawable/ic_nutrisi"
-            android:title=""/>
-        <item
-            android:id="@+id/reminder"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:icon="@drawable/ic_reminder"
-            android:title=""/>
-        <item
-            android:id="@+id/setting"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:icon="@drawable/ic_setting"
-            android:title=""/>
-
-    </group>
+    <item
+        android:id="@+id/home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/ic_home"
+        app:cnb_iconColor="#EE0D50"
+        android:title=""/>
+    <item
+        android:id="@+id/nutrisi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/ic_nutrisi"
+        app:cnb_iconColor="#EE0D50"
+        android:title=""/>
+    <item
+        android:id="@+id/reminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/ic_reminder"
+        app:cnb_iconColor="#EE0D50"
+        android:title=""/>
+    <item
+        android:id="@+id/setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/ic_setting"
+        app:cnb_iconColor="#EE0D50"
+        android:title=""/>
 
 </menu>

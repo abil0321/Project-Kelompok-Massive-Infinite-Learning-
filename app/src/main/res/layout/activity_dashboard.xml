@@ -17,12 +17,6 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:layout_gravity="center"
-            android:layout_width="50dp"
-            android:layout_height="30dp"
-            app:srcCompat="@drawable/ic_person" />
-
-        <ImageView
             android:paddingLeft="10dp"
             android:layout_gravity="center"
             android:layout_width="wrap_content"
@@ -35,22 +29,24 @@
         android:id="@+id/frame_layout"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_nav_bar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
     </FrameLayout>
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNavigationView"
-        android:background="@drawable/btn_nav"
-        android:layout_width="300dp"
-        android:layout_height="65dp"
+    <com.ismaeldivita.chipnavigation.ChipNavigationBar
+        android:id="@+id/bottom_nav_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
         android:layout_marginBottom="10dp"
-        app:menu="@menu/bottom_nav"
-        app:itemIconTint="@color/White"
-        app:itemActiveIndicatorStyle="@color/TransparentColor"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/btn_nav"
+        app:cnb_badgeColor="@color/White"
+        app:cnb_unselectedColor="@color/White"
+        app:cnb_menuResource="@menu/bottom_nav"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

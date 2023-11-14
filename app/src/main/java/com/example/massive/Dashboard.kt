@@ -2,6 +2,7 @@ package com.example.massive
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.fragment.app.Fragment
 import com.example.massive.databinding.ActivityDashboardBinding
 
@@ -12,10 +13,14 @@ class Dashboard : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityDashboardBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        replaceFragment(Home())
 
-        binding.bottomNavigationView.setOnItemSelectedListener {
-            when(it.itemId){
+        replaceFragment(Home())
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+        setUpTabBar()
+    }
+    private fun setUpTabBar() {
+        binding.bottomNavBar.setOnItemSelectedListener {
+            when(it){
                 R.id.home -> replaceFragment(Home())
                 R.id.nutrisi -> replaceFragment(Nutrisi())
                 R.id.reminder -> replaceFragment(Reminder())
@@ -25,6 +30,7 @@ class Dashboard : AppCompatActivity() {
             true
         }
     }
+
     private fun replaceFragment(fragment : Fragment){
         val fragmentManager = supportFragmentManager
         val fragmentTransaction = fragmentManager.beginTransaction()
