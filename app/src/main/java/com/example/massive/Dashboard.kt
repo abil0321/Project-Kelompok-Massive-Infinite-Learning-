@@ -24,10 +24,10 @@ class Dashboard : AppCompatActivity() {
                 R.id.home -> replaceFragment(Home())
                 R.id.nutrisi -> replaceFragment(Nutrisi())
                 R.id.reminder -> replaceFragment(Reminder())
+                R.id.setting -> replaceFragment(Setting())
                 else ->{
                 }
             }
-            true
         }
     }
 
