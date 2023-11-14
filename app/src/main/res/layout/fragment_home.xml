@@ -11,7 +11,7 @@
         android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"
         android:layout_width="match_parent"
-        android:layout_height="330dp"
+        android:layout_height="300dp"
         android:orientation="vertical">
 
         <TextView
@@ -52,11 +52,11 @@
             android:gravity="center"
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent">
 
             <TextView
-                android:text="Ringan"
-                android:textSize="32sp"
+                android:text="Ayo cek level mu"
+                android:textSize="22sp"
                 android:textColor="@color/Black"
                 android:fontFamily="@font/poppins_semibold"
                 android:textAlignment="center"
@@ -72,20 +72,50 @@
                 android:layout_marginEnd="10dp"
                 android:progress="0"
                 android:progressDrawable="@drawable/linear_progress_bar" />
+
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btn_perbaharui"
                 android:text="Perbaharui"
                 android:fontFamily="@font/poppins_semibold"
                 android:textSize="13sp"
-                android:gravity="center"
                 android:textColor="@color/TextColor"
                 android:layout_gravity="center"
                 android:background="@drawable/btn_background"
+                android:drawableStart="@drawable/ic_edit"
+                android:paddingStart="10dp"
                 android:layout_marginStart="100dp"
                 android:layout_marginEnd="100dp"
                 android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@drawable/background_utama"
+        android:layout_marginTop="340dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginLeft="40dp"
+            android:text="Info Anemia"
+            android:textSize="16sp"
+            android:fontFamily="@font/poppins_semibold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
 
         </LinearLayout>
 

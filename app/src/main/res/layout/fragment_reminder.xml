@@ -5,10 +5,37 @@
     android:layout_height="match_parent"
     tools:context=".Reminder">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
+        android:background="@drawable/background_utama"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="340dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginLeft="40dp"
+            android:text="Kalender"
+            android:textSize="16sp"
+            android:fontFamily="@font/poppins_semibold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <CalendarView
+                android:id="@+id/calendarView"
+                android:background="@drawable/background_utama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
 
 </FrameLayout>
