@@ -14,16 +14,21 @@
         android:layout_height="180dp"
         android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/tv_textTime"
-            android:layout_marginLeft="40dp"
-            android:text="@tools:sample/date/ddmmyy"
-            android:textSize="22sp"
-            android:textAlignment="center"
-            android:layout_marginEnd="10dp"
-            android:fontFamily="@font/poppins_semibold"
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="100dp"/>
+            android:layout_height="100dp">
+            <TextView
+                android:id="@+id/tv_selected_date"
+                tools:text="DD/MM/YYYY"
+                android:textSize="28sp"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/set_reminder"
