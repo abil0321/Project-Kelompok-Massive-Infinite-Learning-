@@ -94,7 +94,7 @@
                     android:fontFamily="@font/poppins_regular"
                     android:text="Username"
                     android:textColor="@color/Black"
-                    android:textSize="10sp" />
+                    android:textSize="12sp" />
 
             </LinearLayout>
 
@@ -121,7 +121,7 @@
                     android:fontFamily="@font/poppins_regular"
                     android:text="E-mail"
                     android:textColor="@color/Black"
-                    android:textSize="10sp" />
+                    android:textSize="12sp" />
 
             </LinearLayout>
 
@@ -199,7 +199,7 @@
     </LinearLayout>
 
     <TextView
-        android:layout_marginTop="530dp"
+        android:layout_marginTop="525dp"
         android:text="form"
         android:textSize="16dp"
         android:fontFamily="@font/poppins_semibold"
