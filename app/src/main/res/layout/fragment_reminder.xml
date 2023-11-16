@@ -20,8 +20,8 @@
             android:layout_width="match_parent"
             android:layout_height="100dp">
             <TextView
-                android:id="@+id/tv_selected_date"
-                tools:text="DD/MM/YYYY"
+                android:id="@+id/tvSelectedDateTime"
+                tools:text=""
                 android:textSize="28sp"
                 android:textAlignment="center"
                 android:layout_gravity="center"
@@ -31,7 +31,7 @@
         </LinearLayout>
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/set_reminder"
+            android:id="@+id/setReminder"
             android:text="Set Reminder"
             android:fontFamily="@font/poppins_semibold"
             android:textSize="13sp"
