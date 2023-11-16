@@ -1,15 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".AnemiaStatus">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:textSize="50sp"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="70dp"
+        android:background="@drawable/top_background"
+        android:orientation="horizontal"
+        >
 
-</FrameLayout>
+        <ImageView
+            android:paddingLeft="10dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:src="@drawable/ciura" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/background_utama"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Status Anemia"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Lv"
+                android:textAlignment="center"
+                android:textColor="#EE0D50"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="#EE0D50"
+                android:textSize="100sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Ayo cek level mu"
+                android:textAlignment="center"
+                android:textColor="@color/Black"
+                android:textSize="22sp" />
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="false"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:progress="0"
+                android:progressDrawable="@drawable/linear_progress_bar" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_perbaharui"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="100dp"
+                android:background="@drawable/btn_background"
+                android:drawableStart="@drawable/ic_edit"
+                android:fontFamily="@font/poppins_semibold"
+                android:paddingStart="10dp"
+                android:text="Perbaharui"
+                android:textColor="@color/TextColor"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/idBarChart"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="-285dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="-1dp"
+        tools:ignore="MissingClass" />
+
+
+</RelativeLayout>
