@@ -133,17 +133,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
 
-            <TextView
-            android:text="aelah serah"
-            android:textSize="14sp"
-            android:layout_marginTop="10dp"
-            android:fontFamily="@font/poppins_regular"
-            android:textColor="#474646"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:textAlignment="center"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
             <LinearLayout
                 android:orientation="horizontal"
                 android:gravity="center"
