@@ -1,5 +1,6 @@
 package com.example.massive
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -21,13 +22,8 @@ class Home : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.btnPerbaharui.setOnClickListener {
-            val anemiaStatus = AnemiaStatus()
-            val mFragmentManager = parentFragmentManager
-            mFragmentManager.beginTransaction().apply{
-                replace(R.id.frame_layout, anemiaStatus, AnemiaStatus::class.java.simpleName)
-                addToBackStack(null)
-                commit()
-            }
+            val intent = Intent(activity, AnemiaStatus::class.java)
+            startActivity(intent)
         }
     }
 }

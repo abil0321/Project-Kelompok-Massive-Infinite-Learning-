@@ -57,9 +57,5 @@ dependencies {
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
     implementation ("com.github.PhilJay:MPAndroidChart:v3.1.0")
-    implementation("com.patrykandpatrick.vico:compose:1.12.0")
-    implementation("com.patrykandpatrick.vico:compose-m2:1.12.0")
-    implementation("com.patrykandpatrick.vico:compose-m3:1.12.0")
-    implementation("com.patrykandpatrick.vico:core:1.12.0")
-    implementation("com.patrykandpatrick.vico:views:1.12.0")
+
 }

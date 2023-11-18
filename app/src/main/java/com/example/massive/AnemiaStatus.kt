@@ -1,60 +1,50 @@
 package com.example.massive
 
+import android.content.Intent
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import androidx.fragment.app.Fragment
+import androidx.appcompat.app.AppCompatActivity
+import com.example.massive.databinding.ActivityAnemiaStatusBinding
 import com.github.mikephil.charting.charts.LineChart
-import com.github.mikephil.charting.components.Description
+import com.github.mikephil.charting.components.XAxis
+import com.github.mikephil.charting.components.YAxis
 import com.github.mikephil.charting.data.Entry
 import com.github.mikephil.charting.data.LineData
 import com.github.mikephil.charting.data.LineDataSet
-import com.github.mikephil.charting.interfaces.datasets.ILineDataSet
 
-class AnemiaStatus : Fragment() {
-
+class AnemiaStatus : AppCompatActivity() {
+    private lateinit var binding: ActivityAnemiaStatusBinding
     private lateinit var lineChart: LineChart
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        val view = inflater.inflate(R.layout.fragment_anemia_status, container, false)
-        lineChart = view.findViewById(R.id.lineChart)
-        return view
-    }
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        binding = ActivityAnemiaStatusBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
+        binding.back.setOnClickListener {
+            startActivity(Intent(this, Dashboard::class.java))
+        }
+        lineChart = binding.lineChart
         setupLineChart()
-        setData()
     }
-
     private fun setupLineChart() {
-        // Customize the line chart as needed
-        lineChart.description = Description().apply { text = "Data Hb" }
-        lineChart.setNoDataText("No data available")
-    }
 
-    private fun setData() {
+        lineChart.setTouchEnabled(true)
+        lineChart.setPinchZoom(true)
+
+        val xAxis: XAxis = lineChart.xAxis
+        xAxis.position = XAxis.XAxisPosition.BOTTOM
+
+        val yAxisRight: YAxis = lineChart.axisRight
+        yAxisRight.isEnabled = false
 
         val entries = mutableListOf<Entry>()
         entries.add(Entry(1f, 20f))
-        entries.add(Entry(2f, 15f))
+        entries.add(Entry(2f, 30f))
         entries.add(Entry(3f, 25f))
-        entries.add(Entry(4f, 18f))
-        entries.add(Entry(5f, 30f))
+        entries.add(Entry(4f, 35f))
 
-        val dataSet = LineDataSet(entries, "Example Line Data")
-        dataSet.color = resources.getColor(R.color.AliceBlue)
-        dataSet.valueTextColor = resources.getColor(android.R.color.black)
-
-        val lineDataSets = ArrayList<ILineDataSet>()
-        lineDataSets.add(dataSet)
-
-        val lineData = LineData(lineDataSets)
+        val dataSet = LineDataSet(entries, "Anemia Levels")
+        val lineData = LineData(dataSet)
         lineChart.data = lineData
-        lineChart.invalidate()
     }
 }

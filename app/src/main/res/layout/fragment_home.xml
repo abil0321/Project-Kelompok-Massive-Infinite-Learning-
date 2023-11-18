@@ -6,7 +6,7 @@
     tools:context=".Home">
 
     <LinearLayout
-        android:background="@drawable/background_utama"
+        android:background="@drawable/bckgrnd"
         android:layout_marginTop="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"
