@@ -14,7 +14,6 @@ class Home : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,
     ): View? {
-        //return inflater.inflate(R.layout.fragment_home, container, false)
         binding = FragmentHomeBinding.inflate(inflater, container, false)
         return binding.root
     }
@@ -24,12 +23,11 @@ class Home : Fragment() {
         binding.btnPerbaharui.setOnClickListener {
             val anemiaStatus = AnemiaStatus()
             val mFragmentManager = parentFragmentManager
-            mFragmentManager
-                .beginTransaction().apply {
-                    replace(R.id.frame_layout, anemiaStatus, AnemiaStatus::class.java.simpleName)
-                    addToBackStack(null)
-                    commit()
-                }
+            mFragmentManager.beginTransaction().apply{
+                replace(R.id.frame_layout, anemiaStatus, AnemiaStatus::class.java.simpleName)
+                addToBackStack(null)
+                commit()
+            }
         }
     }
 }

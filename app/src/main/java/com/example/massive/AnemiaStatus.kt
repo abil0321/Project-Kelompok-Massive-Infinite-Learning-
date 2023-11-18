@@ -1,72 +1,60 @@
 package com.example.massive
 
 import android.os.Bundle
-import android.annotation.SuppressLint
-import android.content.Intent
-import android.graphics.Color
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
-import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.AppCompatButton
-import com.github.mikephil.charting.charts.BarChart
-import com.github.mikephil.charting.components.XAxis
-import com.github.mikephil.charting.data.BarData
-import com.github.mikephil.charting.data.BarDataSet
-import com.github.mikephil.charting.data.BarEntry
-import com.github.mikephil.charting.formatter.IndexAxisValueFormatter
+import androidx.fragment.app.Fragment
+import com.github.mikephil.charting.charts.LineChart
+import com.github.mikephil.charting.components.Description
+import com.github.mikephil.charting.data.Entry
+import com.github.mikephil.charting.data.LineData
+import com.github.mikephil.charting.data.LineDataSet
+import com.github.mikephil.charting.interfaces.datasets.ILineDataSet
 
-class AnemiaStatus : AppCompatActivity() {
+class AnemiaStatus : Fragment() {
 
-    lateinit var barChart : BarChart
-    lateinit var barData : BarData
-    lateinit var barDataSet : BarDataSet
-    lateinit var barEnteriesList: ArrayList<BarEntry>
+    private lateinit var lineChart: LineChart
 
-
-    @SuppressLint("MissingInflatedId")
-    override fun onCreateView(savedInstanceState: Bundle?){
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.fragment_anemia_status)
-
-        barChart = findViewById(R.id.idBarChart)
-
-        getBarChartData()
-
-        barDataSet= BarDataSet(barEnteriesList, "Bar Chart Data")
-        barDataSet.color= Color.parseColor("#FF5733")
-        barData= BarData(barDataSet)
-
-        barChart.data= barData
-        barDataSet.ValueTextColor= Color.BLACK
-        barDataSet.ValueTextSize= 16f
-        barChart.description.isEnable= false
-
-        val xAxis= barChart.xAxis
-        xAxis.position= XAxis.XAxisPosition.BOTTOM
-        xAxis.granularity= 1f
-        xAxis.isGranularityEnable= true
-        xAxis.labelCount= barEnteriesList.size
-        xAxis.valueFormatter= IndexAxisValueFormatter(getXAxisLabels())
-
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        val view = inflater.inflate(R.layout.fragment_anemia_status, container, false)
+        lineChart = view.findViewById(R.id.lineChart)
+        return view
     }
 
-    private fun getBarChartData(){
-        barEnteriesList= ArrayList()
-
-        barEnteriesList.add(BarEntry(1f,5f))
-        barEnteriesList.add(BarEntry(2f,4f))
-        barEnteriesList.add(BarEntry(3f,3f))
-        barEnteriesList.add(BarEntry(4f,4f))
-        barEnteriesList.add(BarEntry(5f,5f))
-        barEnteriesList.add(BarEntry(6f,6f))
-        barEnteriesList.add(BarEntry(7f,7f))
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        setupLineChart()
+        setData()
     }
 
-    private fun getXAxisLabels():List<String>{
-        return listOf("","Senin", "Selasa", "Rabu", "Kamis", "Jum'at", "Sabtu","Minggu")
+    private fun setupLineChart() {
+        // Customize the line chart as needed
+        lineChart.description = Description().apply { text = "Data Hb" }
+        lineChart.setNoDataText("No data available")
+    }
 
+    private fun setData() {
+
+        val entries = mutableListOf<Entry>()
+        entries.add(Entry(1f, 20f))
+        entries.add(Entry(2f, 15f))
+        entries.add(Entry(3f, 25f))
+        entries.add(Entry(4f, 18f))
+        entries.add(Entry(5f, 30f))
+
+        val dataSet = LineDataSet(entries, "Example Line Data")
+        dataSet.color = resources.getColor(R.color.AliceBlue)
+        dataSet.valueTextColor = resources.getColor(android.R.color.black)
+
+        val lineDataSets = ArrayList<ILineDataSet>()
+        lineDataSets.add(dataSet)
+
+        val lineData = LineData(lineDataSets)
+        lineChart.data = lineData
+        lineChart.invalidate()
     }
 }
