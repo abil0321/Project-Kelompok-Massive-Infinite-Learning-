@@ -15,8 +15,7 @@ class Setting : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,
     ): View? {
-        // Inflate the layout for this fragment
-       //return inflater.inflate(R.layout.fragment_setting, container, false)
+
         binding = FragmentSettingBinding.inflate(inflater, container, false)
         return binding.root
     }
@@ -24,6 +23,10 @@ class Setting : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         binding.logout.setOnClickListener {
             val intent = Intent(activity, Login::class.java)
+            startActivity(intent)
+        }
+        binding.btnEditProfile.setOnClickListener {
+            val intent = Intent(activity, EditProfile::class.java)
             startActivity(intent)
         }
     }

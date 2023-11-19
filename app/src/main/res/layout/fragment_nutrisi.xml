@@ -11,18 +11,26 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/bottomNavigationView"
-            android:background="@drawable/tab_indicator"
+        <com.ismaeldivita.chipnavigation.ChipNavigationBar
+            android:id="@+id/top_nav_bar"
+            android:background="@drawable/background_text"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"
-            android:layout_marginLeft="50dp"
-            android:layout_marginRight="50dp"
-            app:itemPaddingBottom="20dp"
-            app:itemTextColor="#EE0D50"
-            app:menu="@menu/nav_tab"/>
+            app:cnb_badgeColor="@color/White"
+            app:cnb_unselectedColor="@color/Gray"
+            app:cnb_menuResource="@menu/nav_tab"/>
 
     </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_nutrisi"
+        android:layout_marginTop="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
 
 </FrameLayout>

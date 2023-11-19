@@ -3,4 +3,28 @@
     <string name="open">Open</string>
     <string name="close">Close</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Saran. -->
+    <string name="news_a">Bayam</string>
+    <string name="news_b">Kangkung</string>
+    <string name="news_c">Daun singkong</string>
+    <string name="news_d">Brokoli</string>
+    <string name="news_e">Tahu</string>
+    <string name="news_f">Tempe</string>
+    <string name="news_g">Kacang merah</string>
+    <string name="news_h">Hati</string>
+    <string name="news_i">Daging merah</string>
+    <string name="news_j">Unggas</string>
+
+    <!-- Hindari. -->
+    <string name="news_k">Teh</string>
+    <string name="news_l">Kopi</string>
+    <string name="news_m">Biji-bijian</string>
+    <string name="news_n">Jagung</string>
+    <string name="news_o">Susu</string>
+    <string name="news_p">Yogurt</string>
+    <string name="news_q">Keju</string>
+    <string name="news_r">Beras merah</string>
+    <string name="news_s">Gandum</string>
+
 </resources>

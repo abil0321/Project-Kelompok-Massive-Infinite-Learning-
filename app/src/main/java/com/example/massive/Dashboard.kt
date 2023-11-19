@@ -1,7 +1,7 @@
 package com.example.massive
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.fragment.app.Fragment
 import com.example.massive.databinding.ActivityDashboardBinding
@@ -24,7 +24,7 @@ class Dashboard : AppCompatActivity() {
                 R.id.home -> replaceFragment(Home())
                 R.id.nutrisi -> replaceFragment(Nutrisi())
                 R.id.reminder -> replaceFragment(Reminder())
-                R.id.setting -> replaceFragment(Setting())
+                R.id.profile -> replaceFragment(Setting())
                 else ->{
                 }
             }

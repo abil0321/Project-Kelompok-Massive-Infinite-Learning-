@@ -5,5 +5,10 @@
     android:layout_height="match_parent"
     tools:context=".Saran">
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/id_saran"
+        tools:listitem="@layout/list_item_saran"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
 </FrameLayout>

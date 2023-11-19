@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ProfileActivity">
+    tools:context=".EditProfile">
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -170,7 +170,7 @@
 
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_perbaharui"
+        android:id="@+id/btn_done"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_gravity="center"
