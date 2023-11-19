@@ -22,28 +22,20 @@ class Nutrisi : Fragment(R.layout.fragment_nutrisi) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        setUpTabBar()
+        setUpBottomNavigation()
+
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
     }
 
-    private fun setUpTabBar() {
-        binding.navNutrisi.setOnItemSelectedListener {
-            when(it.itemId){
-                R.id.saran -> replaceFragment(Saran())
-                R.id.hindari -> replaceFragment(Hindari())
-                else -> {
-                }
+    private fun setUpBottomNavigation() {
+        val bottomNavigationView = binding.bottomNavigationView
+        bottomNavigationView.setOnItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.tv_saran -> binding.bottomNavigationView
+                R.id.tv_hindari -> binding.bottomNavigationView
             }
             true
         }
-    }
-
-
-    private fun replaceFragment(fragment: Fragment) {
-        val fragmentManager = childFragmentManager
-        val fragmentTransaction = fragmentManager.beginTransaction()
-        fragmentTransaction.replace(R.id.frame_layout, fragment)
-        fragmentTransaction.commit()
     }
 
     override fun onDestroyView() {

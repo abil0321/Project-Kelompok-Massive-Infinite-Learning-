@@ -1,5 +1,6 @@
 package com.example.massive
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -22,14 +23,8 @@ class Setting : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.logout.setOnClickListener {
-            val setting = Setting()
-            val mFragmentManager = parentFragmentManager
-            mFragmentManager
-                .beginTransaction().apply {
-                    replace(R.id.login, setting, Login::class.java.simpleName)
-                    addToBackStack(null)
-                    commit()
-                }
+            val intent = Intent(activity, Login::class.java)
+            startActivity(intent)
         }
     }
 }

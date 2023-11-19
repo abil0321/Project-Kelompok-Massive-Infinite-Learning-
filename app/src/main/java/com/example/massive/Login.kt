@@ -15,5 +15,8 @@ class Login : AppCompatActivity() {
         binding.btnLogin.setOnClickListener {
             startActivity(Intent(this, Dashboard::class.java))
         }
+        binding.btnLupaSandi.setOnClickListener {
+            startActivity(Intent(this, ForgetPassword::class.java))
+        }
     }
 }

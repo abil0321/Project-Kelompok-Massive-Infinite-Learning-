@@ -27,7 +27,6 @@ class AnemiaStatus : AppCompatActivity() {
         setupLineChart()
     }
     private fun setupLineChart() {
-
         lineChart.setTouchEnabled(true)
         lineChart.setPinchZoom(true)
 
@@ -38,12 +37,15 @@ class AnemiaStatus : AppCompatActivity() {
         yAxisRight.isEnabled = false
 
         val entries = mutableListOf<Entry>()
-        entries.add(Entry(1f, 20f))
-        entries.add(Entry(2f, 30f))
-        entries.add(Entry(3f, 25f))
-        entries.add(Entry(4f, 35f))
+        entries.add(Entry(1f, 9f))
+        entries.add(Entry(2f, 15f))
+        entries.add(Entry(3f, 17f))
+        entries.add(Entry(4f, 12f))
 
-        val dataSet = LineDataSet(entries, "Anemia Levels")
+        val dataSet = LineDataSet(entries, "Hemoglobin")
+
+        dataSet.setColors(intArrayOf(android.R.color.holo_purple), this)
+
         val lineData = LineData(dataSet)
         lineChart.data = lineData
     }
