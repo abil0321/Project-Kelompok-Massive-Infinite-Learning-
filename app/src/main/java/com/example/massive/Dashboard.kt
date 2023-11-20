@@ -18,7 +18,7 @@ class Dashboard : AppCompatActivity() {
         binding = ActivityDashboardBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        replaceFragment(Home()) // Make sure Home is a valid Fragment
+        replaceFragment(Home())
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
         setUpTabBar()
 
@@ -26,7 +26,16 @@ class Dashboard : AppCompatActivity() {
     }
 
     private fun setUpTabBar() {
-
+        binding.bottomNavBar.setOnItemSelectedListener {
+            when(it){
+                R.id.home -> replaceFragment(Home())
+                R.id.nutrisi -> replaceFragment(Nutrisi())
+                R.id.reminder -> replaceFragment(Reminder())
+                R.id.profile -> replaceFragment(Setting())
+                else ->{
+                }
+            }
+        }
     }
 
     private fun replaceFragment(fragment: Fragment) {
