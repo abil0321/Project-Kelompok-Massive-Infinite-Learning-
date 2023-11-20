@@ -29,5 +29,13 @@ class Setting : Fragment() {
             val intent = Intent(activity, EditProfile::class.java)
             startActivity(intent)
         }
+        binding.tentangKami.setOnClickListener {
+            val intent = Intent(activity, TentangKami::class.java)
+            startActivity(intent)
+        }
+        binding.customerService.setOnClickListener {
+            val intent = Intent(activity, LayananKonsumen::class.java)
+            startActivity(intent)
+        }
     }
 }

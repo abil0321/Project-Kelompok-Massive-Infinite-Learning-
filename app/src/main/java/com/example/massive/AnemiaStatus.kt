@@ -23,6 +23,9 @@ class AnemiaStatus : AppCompatActivity() {
         binding.back.setOnClickListener {
             startActivity(Intent(this, Dashboard::class.java))
         }
+        binding.btnPerbaharui.setOnClickListener {
+            startActivity(Intent(this, InputDataHb::class.java))
+        }
         lineChart = binding.lineChart
         setupLineChart()
     }

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LayananKonsumen">
+    tools:context=".InputDataHb">
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -20,7 +20,7 @@
             android:layout_marginLeft="30dp"
             android:layout_marginTop="20dp"
             android:fontFamily="@font/poppins_semibold"
-            android:text="Layanan Konsumen"
+            android:text="Input Data HB"
             android:textColor="#EE0D50"
             android:textSize="22sp" />
 
@@ -61,26 +61,36 @@
                     android:layout_marginLeft="5dp"
                     android:layout_marginTop="20dp"
                     android:layout_marginRight="5dp"
-                    android:hint="Beritahu kami"
+                    android:hint="Masukan Hemoglobin"
                     app:boxStrokeColor="#4E4A4A"
                     app:boxStrokeWidth="1dp">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/Username"
+                        android:id="@+id/dataHb"
                         android:layout_width="match_parent"
-                        android:layout_height="200dp"
+                        android:layout_height="150dp"
                         android:ems="10"
                         android:gravity="center"
                         android:fontFamily="@font/poppins_regular"
                         android:inputType="textPersonName"
                         android:textColor="@color/Black"
-                        android:textSize="13sp" />
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:text="g/dL"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textSize="14sp"
+                        android:gravity="end"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
                 </com.google.android.material.textfield.TextInputLayout>
 
             </LinearLayout>
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btn_kirim"
+                android:id="@+id/btn_simpan"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="50dp"
@@ -88,7 +98,7 @@
                 android:layout_marginBottom="20dp"
                 android:background="@drawable/btn_background"
                 android:fontFamily="@font/poppins_semibold"
-                android:text="Kirim"
+                android:text="Simpan"
                 android:textColor="@color/White"
                 android:textSize="17sp" />
 
