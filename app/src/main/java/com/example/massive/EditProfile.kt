@@ -13,10 +13,13 @@ class EditProfile : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.btnDone.setOnClickListener {
-            val setting = Setting()
-            supportFragmentManager.beginTransaction()
-                .replace(R.id.frame_layout, setting)
-                .commit()
+            replaceFragment(Setting())
         }
+    }
+    private fun replaceFragment(setting: Setting) {
+        val fragmentManager = supportFragmentManager
+        val fragmentTransaction = fragmentManager.beginTransaction()
+        fragmentTransaction.replace(R.id.frame_setting, setting)
+        fragmentTransaction.commit()
     }
 }
