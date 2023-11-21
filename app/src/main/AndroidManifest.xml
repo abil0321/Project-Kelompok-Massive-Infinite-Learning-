@@ -19,7 +19,7 @@
             android:name=".LayananKonsumen"
             android:exported="false" />
         <activity
-            android:name=".TentangKami"
+            android:name=".TentangKamiActivity"
             android:exported="false" />
         <activity
             android:name=".EditProfile"

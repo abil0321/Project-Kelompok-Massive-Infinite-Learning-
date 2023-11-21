@@ -6,12 +6,14 @@
         android:id="@+id/tv_saran"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:icon="@drawable/baseline_check_circle_24"
         app:cnb_iconColor="#EE0D50"
         android:title="Saran"/>
     <item
         android:id="@+id/tv_hindari"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:icon="@drawable/baseline_cancel_24"
         app:cnb_iconColor="#EE0D50"
         android:title="Hindari"/>
 

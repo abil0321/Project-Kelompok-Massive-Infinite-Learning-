@@ -25,12 +25,443 @@
 
     </LinearLayout>
 
+
+
     <FrameLayout
         android:id="@+id/frame_nutrisi"
         android:layout_marginTop="70dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-    </FrameLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout3"
+            app:layout_constraintVertical_bias="0"
+            tools:ignore="NotSibling">
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Sayuran"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="bold"
+                    android:textSize="22sp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/top_background"
+                    android:orientation="vertical">
+
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="72dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="2dp"
+                    android:src="@drawable/bayam1" />
+
+
+                <TextView
+                    android:layout_width="124dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:text="Bayam"
+                    android:layout_marginTop="-50dp"
+                    android:textStyle="bold"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/Button1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="-45dp"
+                    android:layout_marginRight="10dp"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:src="@drawable/baseline_star_border_24" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="72dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="2dp"
+                        android:src="@drawable/kangung" />
+
+
+                    <TextView
+                        android:layout_width="124dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:text="Kangkung"
+                        android:layout_marginTop="-50dp"
+                        android:textStyle="bold"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/Button2"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="-45dp"
+                        android:layout_marginRight="10dp"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:src="@drawable/baseline_star_border_24" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="72dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="2dp"
+                        android:src="@drawable/daunsingkong" />
+
+
+                    <TextView
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Daun Singkong"
+                        android:layout_marginLeft="38dp"
+                        android:layout_marginTop="-50dp"
+                        android:textStyle="bold"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/Button3"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="-45dp"
+                        android:layout_marginRight="10dp"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:src="@drawable/baseline_star_border_24" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="72dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="2dp"
+                        android:src="@drawable/brokoli" />
+
+
+                    <TextView
+                        android:layout_width="124dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:text="Brokoli"
+                        android:layout_marginTop="-50dp"
+                        android:textStyle="bold"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/Button4"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="-45dp"
+                        android:layout_marginRight="10dp"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:src="@drawable/baseline_star_border_24" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Kacang Kacangan"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="bold"
+                    android:textSize="22sp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="72dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="2dp"
+                        android:src="@drawable/tahu" />
+
+
+                    <TextView
+                        android:layout_width="124dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:text="Tahu"
+                        android:layout_marginTop="-50dp"
+                        android:textStyle="bold"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/Button5"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="-45dp"
+                        android:layout_marginRight="10dp"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:src="@drawable/baseline_star_border_24" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="72dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="2dp"
+                        android:src="@drawable/tempe" />
+
+
+                    <TextView
+                        android:layout_width="124dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:text="Tempe"
+                        android:layout_marginTop="-50dp"
+                        android:textStyle="bold"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/Button6"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="-45dp"
+                        android:layout_marginRight="10dp"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:src="@drawable/baseline_star_border_24" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="72dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="2dp"
+                        android:src="@drawable/kacangmerah" />
+
+
+                    <TextView
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="38dp"
+                        android:text="Kacang Merah"
+                        android:layout_marginTop="-50dp"
+                        android:textStyle="bold"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/Button7"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="-45dp"
+                        android:layout_marginRight="10dp"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:src="@drawable/baseline_star_border_24" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Hewani"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="bold"
+                    android:textSize="22sp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="72dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="2dp"
+                        android:src="@drawable/hati" />
+
+
+                    <TextView
+                        android:layout_width="124dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:text="Hati"
+                        android:layout_marginTop="-50dp"
+                        android:textStyle="bold"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/Button8"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="-45dp"
+                        android:layout_marginRight="10dp"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:src="@drawable/baseline_star_border_24" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="72dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="2dp"
+                        android:src="@drawable/dagingmerah" />
+
+
+                    <TextView
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Daging Merah"
+                        android:layout_marginLeft="38dp"
+                        android:layout_marginTop="-50dp"
+                        android:textStyle="bold"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/Button9"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="-45dp"
+                        android:layout_marginRight="10dp"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:src="@drawable/baseline_star_border_24" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="72dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="2dp"
+                        android:src="@drawable/unggas" />
+
+
+                    <TextView
+                        android:layout_width="124dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:text="Unggas"
+                        android:layout_marginTop="-50dp"
+                        android:textStyle="bold"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/Button10"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="-45dp"
+                        android:layout_marginRight="10dp"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:src="@drawable/baseline_star_border_24" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+    </ScrollView>
+    </FrameLayout>
 </FrameLayout>

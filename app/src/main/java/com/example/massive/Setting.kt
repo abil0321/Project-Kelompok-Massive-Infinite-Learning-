@@ -30,7 +30,7 @@ class Setting : Fragment() {
             startActivity(intent)
         }
         binding.tentangKami.setOnClickListener {
-            val intent = Intent(activity, TentangKami::class.java)
+            val intent = Intent(activity, TentangKamiActivity::class.java)
             startActivity(intent)
         }
         binding.customerService.setOnClickListener {

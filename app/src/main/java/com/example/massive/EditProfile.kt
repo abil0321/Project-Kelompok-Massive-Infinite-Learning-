@@ -1,5 +1,6 @@
 package com.example.massive
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.massive.databinding.ActivityEditProfileBinding
@@ -13,7 +14,10 @@ class EditProfile : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.btnDone.setOnClickListener {
-            replaceFragment(Setting())
+            startActivity(Intent(this, Setting::class.java))
+        }
+        binding.back.setOnClickListener {
+            startActivity(Intent(this, Setting::class.java))
         }
     }
     private fun replaceFragment(setting: Setting) {
