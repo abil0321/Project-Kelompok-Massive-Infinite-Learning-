@@ -3,27 +3,24 @@ package com.example.massive
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.ProgressBar
-import android.widget.TextView
+import android.os.Handler
+import android.view.animation.AnimationUtils
+import android.widget.ImageView
 import com.example.massive.databinding.ActivityMainBinding
+import kotlinx.coroutines.delay
 
 class MainActivity : AppCompatActivity() {
-    lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+        setContentView(R.layout.activity_main)
 
-        val progressBar = findViewById<ProgressBar>(R.id.loading)
-        val textView = findViewById<TextView>(R.id.persen)
+        val backgroundImg : ImageView = findViewById(R.id.lv_logo)
+        val sideAnimation = AnimationUtils.loadAnimation(this,R.anim.slide)
+        backgroundImg.startAnimation(sideAnimation)
 
-        progressBar.max = 100
-        progressBar.scaleY = 3F
-        val anim = Loadingscreen(
-            this,progressBar,textView,0F,100F
-        )
-        anim.duration = 8000
-        progressBar.animation = anim
-
+        Handler().postDelayed({
+            startActivity(Intent(this,Login::class.java))
+            finish()
+        },3000)
     }
 }
