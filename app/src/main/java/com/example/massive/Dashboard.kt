@@ -1,5 +1,6 @@
 package com.example.massive
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.widget.TextView
@@ -21,8 +22,11 @@ class Dashboard : AppCompatActivity() {
         replaceFragment(Home())
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
         setUpTabBar()
-
         showCustomAlertDialog()
+
+        binding.btnProfile.setOnClickListener {
+            startActivity(Intent(this, Profile::class.java))
+        }
     }
 
     private fun setUpTabBar() {
@@ -31,7 +35,6 @@ class Dashboard : AppCompatActivity() {
                 R.id.home -> replaceFragment(Home())
                 R.id.nutrisi -> replaceFragment(Nutrisi())
                 R.id.reminder -> replaceFragment(Reminder())
-                R.id.profile -> replaceFragment(Setting())
                 else ->{
                 }
             }

@@ -23,12 +23,5 @@
         android:icon="@drawable/ic_reminder"
         app:cnb_iconColor="#EE0D50"
         android:title="Reminder"/>
-    <item
-        android:id="@+id/profile"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:icon="@drawable/ic_person"
-        app:cnb_iconColor="#EE0D50"
-        android:title="Profile"/>
 
 </menu>
