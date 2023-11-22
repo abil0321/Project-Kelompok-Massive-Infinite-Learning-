@@ -28,220 +28,265 @@
 
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/linearLayout2"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
         android:layout_width="match_parent"
-        android:layout_height="240dp"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="25dp"
         android:layout_marginRight="30dp"
-        android:background="@drawable/background_utama"
-        android:orientation="vertical"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
-        <TextView
-            android:id="@+id/btn_edit_profile"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
-            android:drawableEnd="@drawable/ic_blck_edit"
-            android:fontFamily="@font/poppins_semibold"
-            android:text="Akun"
-            android:textSize="16sp" />
-
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="110dp"
-            android:gravity="center"
-            android:orientation="horizontal">
-
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:layout_width="80dp"
-                android:layout_height="90dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="20dp"
-                android:src="@drawable/karakter" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="200dp"
-                    android:layout_height="35dp"
-                    android:layout_marginEnd="20dp"
-                    android:fontFamily="@font/poppins_semibold"
-                    android:text="Jodhy Herlambang"
-                    android:textColor="@color/Black"
-                    android:textSize="20sp" />
-
-                <TextView
-                    android:layout_width="200dp"
-                    android:layout_height="35dp"
-                    android:layout_marginEnd="20dp"
-                    android:fontFamily="@font/poppins_regular"
-                    android:text="+62 876543210"
-                    android:textColor="@color/Black"
-                    android:textSize="16sp" />
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-        <LinearLayout
+            android:id="@+id/linearLayout2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:gravity="center"
-            android:orientation="vertical">
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Akun"
+                android:textSize="16sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginTop="50dp"
-                android:layout_marginBottom="0dp"
-                android:orientation="vertical">
+                android:layout_height="110dp"
+                android:gravity="center"
+                android:orientation="horizontal">
 
-                <TextView
-                    android:layout_width="200dp"
-                    android:layout_height="25dp"
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="80dp"
+                    android:layout_height="90dp"
                     android:layout_marginStart="20dp"
-                    android:layout_marginTop="3dp"
-                    android:fontFamily="@font/poppins_semibold"
-                    android:text="Jodhy"
-                    android:textColor="@color/Black"
-                    android:textSize="15sp" />
+                    android:layout_marginEnd="20dp"
+                    android:src="@drawable/karakter" />
 
-                <TextView
-                    android:layout_width="200dp"
-                    android:layout_height="16dp"
-                    android:layout_marginStart="20dp"
-                    android:fontFamily="@font/poppins_regular"
-                    android:text="Username"
-                    android:textColor="@color/Black"
-                    android:textSize="12sp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="35dp"
+                        android:layout_marginEnd="20dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Jodhy Herlambang"
+                        android:textColor="@color/Black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="35dp"
+                        android:layout_marginEnd="20dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="+62 876543210"
+                        android:textColor="@color/Black"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginBottom="50dp"
+                android:layout_height="120dp"
+                android:gravity="center"
                 android:orientation="vertical">
 
-                <TextView
-                    android:layout_width="200dp"
-                    android:layout_height="25dp"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="3dp"
-                    android:fontFamily="@font/poppins_semibold"
-                    android:text="jalanyuk@gmail.com"
-                    android:textColor="@color/Black"
-                    android:textSize="15sp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginBottom="0dp"
+                    android:orientation="vertical">
 
-                <TextView
-                    android:layout_width="200dp"
-                    android:layout_height="16dp"
-                    android:layout_marginStart="20dp"
-                    android:fontFamily="@font/poppins_regular"
-                    android:text="E-mail"
-                    android:textColor="@color/Black"
-                    android:textSize="12sp" />
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="25dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="3dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Jodhy"
+                        android:textColor="@color/Black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="16dp"
+                        android:layout_marginStart="20dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="Username"
+                        android:textColor="@color/Black"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="50dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="25dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="3dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="jalanyuk@gmail.com"
+                        android:textColor="@color/Black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="16dp"
+                        android:layout_marginStart="20dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="E-mail"
+                        android:textColor="@color/Black"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
 
             </LinearLayout>
 
         </LinearLayout>
 
-    </LinearLayout>
+    </androidx.cardview.widget.CardView>
 
-    <LinearLayout
-        android:id="@+id/linearLayout3"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btn_edit_profile"
+        android:layout_width="0dp"
+        android:layout_height="57dp"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="230dp"
+        app:cardCornerRadius="500dp"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView3"
+        app:layout_constraintEnd_toEndOf="@+id/cardView3"
+        app:layout_constraintStart_toStartOf="@+id/cardView3"
+        app:layout_constraintTop_toTopOf="@+id/cardView3">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_edit_ungu" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView4"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="20dp"
         android:layout_marginRight="30dp"
-        android:background="@drawable/background_utama"
-        android:orientation="vertical"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
-            android:fontFamily="@font/poppins_semibold"
-            android:text="Pengaturan"
-            android:textSize="16sp" />
+        app:layout_constraintTop_toBottomOf="@+id/cardView3">
 
         <LinearLayout
+            android:id="@+id/linearLayout3"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:orientation="vertical">
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
 
             <TextView
-                android:id="@+id/tentang_kami"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="10dp"
-                android:drawableStart="@drawable/ic_info"
-                android:drawablePadding="10dp"
-
                 android:fontFamily="@font/poppins_semibold"
-                android:text="Tentang Kami"
-                android:textColor="@color/Black"
-                android:textSize="18sp" />
+                android:text="Pengaturan"
+                android:textSize="16sp" />
 
-            <TextView
-                android:id="@+id/layanan_konsumen"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="10dp"
-                android:drawableStart="@drawable/ic_customer_service"
-                android:drawablePadding="10dp"
-                android:fontFamily="@font/poppins_semibold"
-                android:text="Layanan Konsumen"
-                android:textColor="@color/Black"
-                android:textSize="18sp" />
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/logout"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="25dp"
-                android:drawableStart="@drawable/ic_logout"
-                android:drawablePadding="10dp"
-                android:fontFamily="@font/poppins_semibold"
-                android:text="Logout"
-                android:textColor="@color/Black"
-                android:textSize="18sp" />
+                <TextView
+                    android:id="@+id/tentang_kami"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:drawableStart="@drawable/ic_info"
+                    android:drawablePadding="10dp"
+
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Tentang Kami"
+                    android:textColor="@color/Black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/layanan_konsumen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:drawableStart="@drawable/ic_customer_service"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Layanan Konsumen"
+                    android:textColor="@color/Black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/logout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="25dp"
+                    android:drawableStart="@drawable/ic_logout"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Logout"
+                    android:textColor="@color/Black"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
 
         </LinearLayout>
 
-    </LinearLayout>
+    </androidx.cardview.widget.CardView>
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/poppins_semibold"
         android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_semibold"
         android:text="form"
         android:textAlignment="center"
         android:textSize="16dp"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+        app:layout_constraintTop_toBottomOf="@+id/cardView4" />
 
     <TextView
         android:layout_width="match_parent"
@@ -252,5 +297,6 @@
         android:textColor="@color/Black"
         android:textSize="16dp"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
