@@ -22,7 +22,7 @@
             android:layout_marginTop="20dp"
             android:drawableStart="@drawable/ic_back"
             android:fontFamily="@font/poppins_semibold"
-            android:text="Ubah Username"
+            android:text="Edit Profile"
             android:textColor="#EE0D50"
             android:textSize="22sp" />
 
@@ -170,7 +170,7 @@
 
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_done"
+        android:id="@+id/btn_simpan"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_gravity="center"
@@ -179,7 +179,7 @@
         android:layout_marginTop="20dp"
         android:background="@drawable/btn_background"
         android:fontFamily="@font/poppins_semibold"
-        android:text="Kirim"
+        android:text="Simpan"
         android:textColor="@color/TextColor"
         android:textSize="13sp"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout6" />

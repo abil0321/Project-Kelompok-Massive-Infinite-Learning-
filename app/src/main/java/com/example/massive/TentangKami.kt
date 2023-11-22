@@ -1,19 +1,19 @@
 package com.example.massive
 
 import android.content.Intent
-import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
 import com.example.massive.databinding.ActivityTentangKamiBinding
 
-//class TentangKami : AppCompatActivity() {
-//    private lateinit var binding: ActivityTentangKamiBinding
-//    override fun onCreate(savedInstanceState: Bundle?) {
-//        super.onCreate(savedInstanceState)
-//        binding = ActivityTentangKamiBinding.inflate(layoutInflater)
-//        setContentView(binding.root)
-//
-//        binding.back3.setOnClickListener {
-//            startActivity(Intent(this, Setting::class.java))
-//        }
-//    }
-//}
+class TentangKami : AppCompatActivity() {
+    private lateinit var binding: ActivityTentangKamiBinding
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        binding = ActivityTentangKamiBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        binding.back3.setOnClickListener {
+            startActivity(Intent(this, Dashboard::class.java))
+        }
+    }
+}

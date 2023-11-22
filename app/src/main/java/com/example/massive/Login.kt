@@ -2,6 +2,7 @@ package com.example.massive
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
 import com.example.massive.databinding.ActivityLoginBinding
 import com.google.android.gms.auth.api.signin.GoogleSignIn
@@ -11,6 +12,7 @@ import com.google.android.gms.common.api.ApiException
 import com.google.android.gms.tasks.Task
 
 class Login : AppCompatActivity() {
+    private lateinit var etUsername: EditText
     private lateinit var binding: ActivityLoginBinding
     private val RC_SIGN_IN = 9001
 
@@ -18,9 +20,11 @@ class Login : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        etUsername = findViewById(R.id.et_username)
 
         binding.btnLogin.setOnClickListener {
-            startActivity(Intent(this, Dashboard::class.java))
+            startActivity(Intent(this, Dashboard::class.java)
+                .putExtra("username",etUsername.text.toString()))
         }
         binding.btnLupaSandi.setOnClickListener {
             startActivity(Intent(this, ForgetPassword::class.java))

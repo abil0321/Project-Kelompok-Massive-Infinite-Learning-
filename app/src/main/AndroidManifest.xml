@@ -13,7 +13,11 @@
         android:theme="@style/Theme.Massive"
         tools:targetApi="31">
         <activity
+<<<<<<< HEAD
             android:name=".infoAnemia.InfoAnemiaActivity"
+=======
+            android:name=".Profile"
+>>>>>>> 9250d7cf681a5c36c2a1b81d14f6e35f6dc44e20
             android:exported="false" />
         <activity
             android:name=".InputDataHb"
@@ -22,7 +26,7 @@
             android:name=".LayananKonsumen"
             android:exported="false" />
         <activity
-            android:name=".TentangKamiActivity"
+            android:name=".TentangKami"
             android:exported="false" />
         <activity
             android:name=".EditProfile"

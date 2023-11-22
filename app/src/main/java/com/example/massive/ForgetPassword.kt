@@ -12,7 +12,10 @@ class ForgetPassword : AppCompatActivity() {
         binding = ActivityForgetPasswordBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.btnForgetPassword.setOnClickListener {
+        binding.btnKirim.setOnClickListener {
+            startActivity(Intent(this, Login::class.java))
+        }
+        binding.tvMasukSkrng.setOnClickListener {
             startActivity(Intent(this, Login::class.java))
         }
     }

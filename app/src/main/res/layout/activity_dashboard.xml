@@ -16,12 +16,24 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <ImageView
-            android:paddingLeft="10dp"
-            android:layout_gravity="center"
-            android:layout_width="wrap_content"
-            android:layout_height="25dp"
-            android:src="@drawable/ciura" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/btn_profile"
+            android:src="@drawable/karakter"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="55dp"
+            android:layout_height="70dp"/>
+        <TextView
+            android:id="@+id/recive_username"
+            android:text=""
+            android:textSize="16sp"
+            android:textColor="#720DEE"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
 
     </LinearLayout>
 
