@@ -7,17 +7,115 @@
     tools:context=".Information.BayamActivity">
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
+        android:layout_height="50dp"
+        android:background="@drawable/top_background"
+        android:orientation="horizontal"
         app:layout_constraintTop_toTopOf="parent">
 
-        <ImageView
+        <TextView
+            android:id="@+id/back10"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/test" />
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:drawableStart="@drawable/ic_back"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Informasi"
+            android:textColor="#EE0D50"
+            android:textSize="22sp" />
 
     </LinearLayout>
 
 
+    <RelativeLayout
+        android:layout_width="350sp"
+        android:layout_height="500sp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="-50dp"
+        android:background="@drawable/border"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout" >
+
+        <LinearLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageView
+                android:id="@+id/star"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/baseline_star_rate_24"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/bayam1"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="top"
+                    android:text="Menambahkan zat besi pada bayam berperan untuk pembentukan hemoglobin. Bayam hijau memiliki banyak manfaat yang sangat baik karena merupakan sumber kalsium, vitamin A, Vitamin C, dan Vitamin E, serat dan juga betakaroten. Selain itu bayam juga memiliki kandungan zat besi yang sangat tinggi untuk mencegah anemia."
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="230dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Bayam"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+
+
+
+
+        
 </androidx.constraintlayout.widget.ConstraintLayout>

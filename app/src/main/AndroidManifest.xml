@@ -12,8 +12,35 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Massive"
         tools:targetApi="31">
+<!--        <activity-->
+<!--            android:name=".cobacobaactivity"-->
+<!--            android:exported="false" />-->
         <activity
-            android:name=".KangkungActivity"
+            android:name=".Information.UnggasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Information.DagingMerahActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Information.HatiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Information.KacangMerahActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Information.TempeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Information.Tahuctivity"
+            android:exported="false" />
+        <activity
+            android:name=".Information.BrokoliActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Information.DaunSingkongActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Information.KangkungActivity"
             android:exported="false" />
         <activity
             android:name=".Information.BayamActivity"

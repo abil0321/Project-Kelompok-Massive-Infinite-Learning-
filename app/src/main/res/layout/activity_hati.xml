@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Information.KangkungActivity">
+    tools:context=".Information.HatiActivity">
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -15,7 +15,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/back11"
+            android:id="@+id/back17"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -51,7 +51,7 @@
             app:layout_constraintStart_toStartOf="parent">
 
             <ImageView
-                android:id="@+id/star2"
+                android:id="@+id/star8"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/baseline_star_border_24"/>
@@ -69,7 +69,7 @@
                 android:layout_height="100dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="60dp"
-                android:background="@drawable/kangung"/>
+                android:background="@drawable/hati"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -85,7 +85,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="top"
-                    android:text="Kangkung memiliki kandungan kalori dan lemak cukup rendah. Selain itu, sayur kangkung juga memiliki kandungan vitamin A yang cukup tinggi sebagai kandungan antioksidan. Kangkung memiliki kandungan zat besi yang baik untuk membantu tubuh memproduksi sel darah merah yang sehatMenambahkan zat besi pada bayam berperan untuk pembentukan hemoglobin. Bayam hijau memiliki banyak manfaat yang sangat baik karena merupakan sumber kalsium, vitamin A, Vitamin C, dan Vitamin E, serat dan juga betakaroten. Selain itu bayam juga memiliki kandungan zat besi yang sangat tinggi untuk mencegah anemia"
+                    android:text="Hati sapi kaya akan zat besi yang berperan penting dalam proses produksi hemoglobin di sel darah merah. Perlu diketahui, dalam 100 gram hati sapi mengandung 6,5 miligram zat besi. Zat besi dalam hati sapi merupakan zat besi heme yang diserap lebih efektif oleh tubuh.
+Hati ayam juga merupakan tempat penyimpanan zat besi sehingga mengandung besi dengan kadar tinggi yang dibutuhkan untuk mencegah anemia. Hasil penelitian ini menunjukkan bahwa ada peningkatan kadar haemoglobin yang signifikan setelah pemberian intervensi berupa konsumsi hati ayam selama 14 hari."
                     android:textSize="16sp"/>
 
             </LinearLayout>
@@ -106,7 +107,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:text="Kangkung"
+            android:text="Hati"
             android:textSize="20sp"
             android:textStyle="bold" />
 

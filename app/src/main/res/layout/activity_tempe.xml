@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Information.KangkungActivity">
+    tools:context=".Information.TempeActivity">
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -15,7 +15,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/back11"
+            android:id="@+id/back15"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -51,7 +51,7 @@
             app:layout_constraintStart_toStartOf="parent">
 
             <ImageView
-                android:id="@+id/star2"
+                android:id="@+id/star6"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/baseline_star_border_24"/>
@@ -69,7 +69,7 @@
                 android:layout_height="100dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="60dp"
-                android:background="@drawable/kangung"/>
+                android:background="@drawable/tempe"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -85,7 +85,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="top"
-                    android:text="Kangkung memiliki kandungan kalori dan lemak cukup rendah. Selain itu, sayur kangkung juga memiliki kandungan vitamin A yang cukup tinggi sebagai kandungan antioksidan. Kangkung memiliki kandungan zat besi yang baik untuk membantu tubuh memproduksi sel darah merah yang sehatMenambahkan zat besi pada bayam berperan untuk pembentukan hemoglobin. Bayam hijau memiliki banyak manfaat yang sangat baik karena merupakan sumber kalsium, vitamin A, Vitamin C, dan Vitamin E, serat dan juga betakaroten. Selain itu bayam juga memiliki kandungan zat besi yang sangat tinggi untuk mencegah anemia"
+                    android:text="Tempe merupakan pangan fungsional yang mempunyai potensi untuk mengatasi penanggulangan anemia. Tempe mengandung zat gizi yaitu zat besi,asam folat, vitamin B12 yang mampu meningkatkan kadar hemoglobin"
                     android:textSize="16sp"/>
 
             </LinearLayout>
@@ -106,7 +106,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:text="Kangkung"
+            android:text="Tempe"
             android:textSize="20sp"
             android:textStyle="bold" />
 
