@@ -16,7 +16,7 @@ class LayananKonsumen : AppCompatActivity() {
             startActivity(Intent(this, Dashboard::class.java))
         }
         binding.back4.setOnClickListener {
-            startActivity(Intent(this, Dashboard::class.java))
+            startActivity(Intent(this, Profile::class.java))
         }
     }
 }

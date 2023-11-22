@@ -13,7 +13,7 @@ class TentangKami : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.back3.setOnClickListener {
-            startActivity(Intent(this, Dashboard::class.java))
+            startActivity(Intent(this, Profile::class.java))
         }
     }
 }

@@ -66,34 +66,35 @@
                     android:orientation="vertical">
 
 
-                <ImageView
-                    android:layout_width="80dp"
-                    android:layout_height="72dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="2dp"
-                    android:src="@drawable/bayam1" />
+                    <ImageButton
+                        android:id="@+id/img1"
+                        android:layout_width="80dp"
+                        android:layout_height="72dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/bayam1" />
 
 
-                <TextView
-                    android:layout_width="124dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="10dp"
-                    android:text="Bayam"
-                    android:layout_marginTop="-50dp"
-                    android:textStyle="bold"
-                    android:textSize="20sp" />
+                    <TextView
+                        android:layout_width="124dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:text="Bayam"
+                        android:layout_marginTop="-50dp"
+                        android:textStyle="bold"
+                        android:textSize="20sp" />
 
-                <ImageView
-                    android:id="@+id/Button1"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_gravity="end"
-                    android:layout_marginTop="-45dp"
-                    android:layout_marginRight="10dp"
-                    android:clickable="false"
-                    android:focusable="false"
-                    android:src="@drawable/baseline_star_border_24" />
+                    <ImageView
+                        android:id="@+id/Button1"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="-45dp"
+                        android:layout_marginRight="10dp"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:src="@drawable/baseline_star_rate_24" />
 
                 </LinearLayout>
 
@@ -103,12 +104,13 @@
                     android:layout_marginTop="10dp"
                     android:orientation="vertical">
 
-                    <ImageView
+                    <ImageButton
+                        android:id="@+id/img2"
                         android:layout_width="80dp"
                         android:layout_height="72dp"
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="2dp"
-                        android:src="@drawable/kangung" />
+                        android:background="@drawable/kangung" />
 
 
                     <TextView
@@ -140,12 +142,13 @@
                     android:layout_marginTop="10dp"
                     android:orientation="vertical">
 
-                    <ImageView
+                    <ImageButton
+                        android:id="@+id/img3"
                         android:layout_width="80dp"
                         android:layout_height="72dp"
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="2dp"
-                        android:src="@drawable/daunsingkong" />
+                        android:background="@drawable/daunsingkong" />
 
 
                     <TextView
@@ -177,12 +180,13 @@
                     android:layout_marginTop="10dp"
                     android:orientation="vertical">
 
-                    <ImageView
+                    <ImageButton
+                        android:id="@+id/img4"
                         android:layout_width="80dp"
                         android:layout_height="72dp"
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="2dp"
-                        android:src="@drawable/brokoli" />
+                        android:background="@drawable/brokoli" />
 
 
                     <TextView
@@ -222,12 +226,13 @@
                     android:layout_marginTop="10dp"
                     android:orientation="vertical">
 
-                    <ImageView
+                    <ImageButton
+                        android:id="@+id/img5"
                         android:layout_width="80dp"
                         android:layout_height="72dp"
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="2dp"
-                        android:src="@drawable/tahu" />
+                        android:background="@drawable/tahu" />
 
 
                     <TextView
@@ -259,12 +264,13 @@
                     android:layout_marginTop="10dp"
                     android:orientation="vertical">
 
-                    <ImageView
+                    <ImageButton
+                        android:id="@+id/img6"
                         android:layout_width="80dp"
                         android:layout_height="72dp"
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="2dp"
-                        android:src="@drawable/tempe" />
+                        android:background="@drawable/tempe" />
 
 
                     <TextView
@@ -296,12 +302,13 @@
                     android:layout_marginTop="10dp"
                     android:orientation="vertical">
 
-                    <ImageView
+                    <ImageButton
+                        android:id="@+id/img7"
                         android:layout_width="80dp"
                         android:layout_height="72dp"
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="2dp"
-                        android:src="@drawable/kacangmerah" />
+                        android:background="@drawable/kacangmerah" />
 
 
                     <TextView
@@ -341,12 +348,13 @@
                     android:layout_marginTop="10dp"
                     android:orientation="vertical">
 
-                    <ImageView
+                    <ImageButton
+                        android:id="@+id/img8"
                         android:layout_width="80dp"
                         android:layout_height="72dp"
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="2dp"
-                        android:src="@drawable/hati" />
+                        android:background="@drawable/hati" />
 
 
                     <TextView
@@ -379,12 +387,13 @@
                     android:layout_marginTop="10dp"
                     android:orientation="vertical">
 
-                    <ImageView
+                    <ImageButton
+                        android:id="@+id/img9"
                         android:layout_width="80dp"
                         android:layout_height="72dp"
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="2dp"
-                        android:src="@drawable/dagingmerah" />
+                        android:background="@drawable/dagingmerah" />
 
 
                     <TextView
@@ -416,12 +425,13 @@
                     android:layout_marginTop="10dp"
                     android:orientation="vertical">
 
-                    <ImageView
+                    <ImageButton
+                        android:id="@+id/img10"
                         android:layout_width="80dp"
                         android:layout_height="72dp"
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="2dp"
-                        android:src="@drawable/unggas" />
+                        android:background="@drawable/unggas" />
 
 
                     <TextView
@@ -462,6 +472,6 @@
             </LinearLayout>
 
 
-    </ScrollView>
+        </ScrollView>
     </FrameLayout>
 </FrameLayout>

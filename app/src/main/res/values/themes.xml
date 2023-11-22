@@ -13,5 +13,6 @@
     </style>
 
     <style name="Theme.Massive.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
     <style name="Theme.Massive.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>
