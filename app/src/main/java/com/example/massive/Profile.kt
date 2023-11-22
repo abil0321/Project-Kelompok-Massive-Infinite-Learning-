@@ -12,8 +12,20 @@ class Profile : AppCompatActivity() {
         binding = ActivityProfileBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        binding.logout.setOnClickListener {
+            startActivity(Intent(this, Login::class.java))
+        }
         binding.back3.setOnClickListener {
             startActivity(Intent(this, Dashboard::class.java))
+        }
+        binding.btnEditProfile.setOnClickListener {
+            startActivity(Intent(this, EditProfile::class.java))
+        }
+        binding.tentangKami.setOnClickListener {
+            startActivity(Intent(this, TentangKami::class.java))
+        }
+        binding.layananKonsumen.setOnClickListener {
+            startActivity(Intent(this, LayananKonsumen::class.java))
         }
     }
 }

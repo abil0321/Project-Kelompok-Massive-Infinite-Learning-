@@ -13,7 +13,7 @@ class EditProfile : AppCompatActivity() {
         binding = ActivityEditProfileBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.btnDone.setOnClickListener {
+        binding.btnSimpan.setOnClickListener {
             startActivity(Intent(this, Profile::class.java))
         }
         binding.back.setOnClickListener {

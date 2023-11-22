@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.massive.databinding.ActivityTentangKamiBinding
 
-class TentangKamiActivity : AppCompatActivity() {
+class TentangKami : AppCompatActivity() {
     private lateinit var binding: ActivityTentangKamiBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
