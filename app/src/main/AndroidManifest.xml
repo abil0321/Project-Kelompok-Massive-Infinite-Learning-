@@ -49,9 +49,6 @@
             android:name=".infoAnemia.InfoAnemiaActivity"
             android:exported="false" />
         <activity
-            android:name=".Profile"
-            android:exported="false" />
-        <activity
             android:name=".InputDataHb"
             android:exported="false" />
         <activity

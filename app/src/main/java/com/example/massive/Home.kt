@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.fragment.app.Fragment
 import com.example.massive.databinding.FragmentHomeBinding
 import com.example.massive.infoAnemia.InfoAnemiaActivity
@@ -17,6 +18,9 @@ class Home : Fragment() {
         savedInstanceState: Bundle?,
     ): View? {
         binding = FragmentHomeBinding.inflate(inflater, container, false)
+        val text: TextView = binding.reciveUsername
+        val value = arguments?.getString("name")
+        text.text = "Halo, $value"
         return binding.root
     }
 

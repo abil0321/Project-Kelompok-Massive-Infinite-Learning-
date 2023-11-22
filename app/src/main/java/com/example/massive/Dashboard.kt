@@ -23,15 +23,6 @@ class Dashboard : AppCompatActivity() {
         setUpTabBar()
         showCustomAlertDialog()
 
-        textUserName = findViewById(R.id.recive_username)
-
-        val userName = intent.getStringExtra("username")
-
-        textUserName.text = "Welcome, "+userName
-
-        binding.btnProfile.setOnClickListener {
-            startActivity(Intent(this, Profile::class.java))
-        }
     }
 
     private fun setUpTabBar() {
@@ -40,6 +31,7 @@ class Dashboard : AppCompatActivity() {
                 R.id.home -> replaceFragment(Home())
                 R.id.nutrisi -> replaceFragment(Nutrisi())
                 R.id.reminder -> replaceFragment(Reminder())
+                R.id.profile -> replaceFragment(Profile())
                 else ->{
                 }
             }
