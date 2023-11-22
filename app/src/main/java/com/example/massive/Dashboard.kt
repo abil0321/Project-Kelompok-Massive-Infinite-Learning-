@@ -11,18 +11,23 @@ import androidx.fragment.app.Fragment
 import com.example.massive.databinding.ActivityDashboardBinding
 
 class Dashboard : AppCompatActivity() {
-
+    private lateinit var textUserName: TextView
     private lateinit var binding: ActivityDashboardBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityDashboardBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
         replaceFragment(Home())
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
         setUpTabBar()
         showCustomAlertDialog()
+
+        textUserName = findViewById(R.id.recive_username)
+
+        val userName = intent.getStringExtra("username")
+
+        textUserName.text = "Welcome, "+userName
 
         binding.btnProfile.setOnClickListener {
             startActivity(Intent(this, Profile::class.java))
