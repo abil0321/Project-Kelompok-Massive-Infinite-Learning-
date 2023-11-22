@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginBottom="4dp"
+    card_view:cardCornerRadius="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/img_item_photo"
+            android:layout_width="match_parent"
+            android:layout_height="389dp"
+            android:layout_marginBottom="4dp"
+            android:scaleType="centerCrop"
+            tools:src="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/tv_item_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="8dp"
+            android:layout_below="@id/img_item_photo"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="Title" />
+
+        <TextView
+            android:id="@+id/tv_item_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_item_name"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="15dp"
+            android:ellipsize="end"
+            android:maxLines="5"
+            tools:text="Deskripsi" />
+
+        <TextView
+            android:id="@+id/tv_item_date"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_item_description"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:maxLines="5"
+            tools:text="Date Upload" />
+
+        <TextView
+            android:id="@+id/btn_item"
+            android:layout_width="78dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/White"
+            android:layout_below="@id/tv_item_description"
+            android:layout_toRightOf="@id/tv_item_date"
+            android:layout_marginLeft="30dp"
+            android:padding="5dp"
+            android:ellipsize="end"
+            android:maxLines="5"
+            android:textSize="16dp"
+            android:background="@drawable/button_shape"
+            tools:text="@string/baca" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

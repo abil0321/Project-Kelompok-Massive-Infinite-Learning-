@@ -28,5 +28,6 @@
     <string name="news_r">Beras merah</string>
     <string name="news_s">Gandum</string>
     <string name="server_client_id" />
+    <string name="baca">Baca</string>
 
 </resources>

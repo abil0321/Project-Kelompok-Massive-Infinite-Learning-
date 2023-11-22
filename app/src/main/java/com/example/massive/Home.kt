@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.massive.databinding.FragmentHomeBinding
+import com.example.massive.infoAnemia.InfoAnemiaActivity
 
 class Home : Fragment() {
     private lateinit var binding: FragmentHomeBinding
@@ -21,8 +22,14 @@ class Home : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
         binding.btnPerbaharui.setOnClickListener {
             val intent = Intent(activity, AnemiaStatus::class.java)
+            startActivity(intent)
+        }
+
+        binding.tvLanjut.setOnClickListener {
+            val intent = Intent(requireActivity(), InfoAnemiaActivity::class.java)
             startActivity(intent)
         }
     }
