@@ -13,10 +13,13 @@ class LayananKonsumen : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.btnKirim.setOnClickListener {
-            startActivity(Intent(this, Dashboard::class.java))
+            onBackPressed()
         }
         binding.back4.setOnClickListener {
-            startActivity(Intent(this, Profile::class.java))
+            onBackPressed()
         }
+    }
+    private fun navigateToProfileFragment() {
+        startActivity(Intent(this, Profile::class.java))
     }
 }

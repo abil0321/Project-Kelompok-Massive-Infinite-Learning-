@@ -13,7 +13,10 @@ class TentangKami : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.back3.setOnClickListener {
-            startActivity(Intent(this, Profile::class.java))
+            onBackPressed()
         }
+    }
+    private fun navigateToProfileFragment() {
+        startActivity(Intent(this, Profile::class.java))
     }
 }

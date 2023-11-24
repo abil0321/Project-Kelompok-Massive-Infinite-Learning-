@@ -14,10 +14,14 @@ class EditProfile : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.btnSimpan.setOnClickListener {
-            startActivity(Intent(this, Profile::class.java))
+            onBackPressed()
         }
         binding.back.setOnClickListener {
-            startActivity(Intent(this, Profile::class.java))
+            onBackPressed()
         }
+    }
+
+    private fun navigateToProfileFragment() {
+        startActivity(Intent(this, Profile::class.java))
     }
 }
