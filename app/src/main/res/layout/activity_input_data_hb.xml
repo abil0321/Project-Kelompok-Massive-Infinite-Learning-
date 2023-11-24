@@ -26,6 +26,32 @@
 
     </LinearLayout>
 
+    <TextView
+        android:id="@+id/recive_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="30dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="TextView"
+        android:textColor="@color/Black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:layout_marginLeft="30dp"
+        android:text="Ayo input data hemoglobin kamu disini"
+        android:textColor="@color/Black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recive_username" />
+
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
         android:layout_width="350dp"
@@ -89,21 +115,34 @@
 
             </LinearLayout>
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btn_simpan"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="50dp"
-                android:layout_marginRight="50dp"
-                android:layout_marginBottom="20dp"
-                android:background="@drawable/btn_background"
-                android:fontFamily="@font/poppins_semibold"
-                android:text="Simpan"
-                android:textColor="@color/White"
-                android:textSize="17sp" />
-
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_simpan"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="51dp"
+        android:background="@drawable/btn_background"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Simpan"
+        android:textColor="@color/White"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_batal"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="51dp"
+        android:background="@drawable/btn_back"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Batal"
+        android:textColor="#EE0D50"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
