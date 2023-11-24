@@ -12,9 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Massive"
         tools:targetApi="31">
-<!--        <activity-->
-<!--            android:name=".cobacobaactivity"-->
-<!--            android:exported="false" />-->
+        <activity
+            android:name=".AturPengingat"
+            android:exported="false" />
+        <!-- <activity -->
+        <!-- android:name=".cobacobaactivity" -->
+        <!-- android:exported="false" /> -->
         <activity
             android:name=".Information.UnggasActivity"
             android:exported="false" />
