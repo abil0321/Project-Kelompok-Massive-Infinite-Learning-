@@ -65,9 +65,8 @@ class Login : AppCompatActivity() {
     private fun handleGoogleSignInResult(completedTask: Task<GoogleSignInAccount>) {
         try {
             val account = completedTask.getResult(ApiException::class.java)
-            startActivity(Intent(this, Login::class.java))
+            startActivity(Intent(this, Dashboard::class.java))
         } catch (e: ApiException) {
-
         }
     }
 }
