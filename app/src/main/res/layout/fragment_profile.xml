@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="15dp"
         android:layout_marginRight="30dp"
         app:cardCornerRadius="10dp"
         app:cardElevation="10dp">
@@ -144,7 +144,7 @@
         android:layout_width="80dp"
         android:layout_height="60dp"
         android:layout_marginLeft="270dp"
-        android:layout_marginTop="230dp"
+        android:layout_marginTop="215dp"
         app:cardCornerRadius="500dp"
         app:cardElevation="10dp">
 
@@ -160,7 +160,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="320dp"
+        android:layout_marginTop="300dp"
         android:layout_marginRight="30dp"
         app:cardCornerRadius="10dp"
         app:cardElevation="10dp"
@@ -191,6 +191,20 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/ganti_sandi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="10dp"
+                    android:drawableStart="@drawable/ic_sandi"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Ganti Kata Sandi"
+                    android:textColor="@color/Black"
+                    android:textSize="18sp" />
+
+                <TextView
                     android:id="@+id/tentang_kami"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -200,7 +214,6 @@
                     android:layout_marginBottom="10dp"
                     android:drawableStart="@drawable/ic_info"
                     android:drawablePadding="10dp"
-
                     android:fontFamily="@font/poppins_semibold"
                     android:text="Tentang Kami"
                     android:textColor="@color/Black"
@@ -226,7 +239,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
-                    android:layout_marginBottom="25dp"
+                    android:layout_marginBottom="20dp"
                     android:drawableStart="@drawable/ic_logout"
                     android:drawablePadding="10dp"
                     android:fontFamily="@font/poppins_semibold"
@@ -244,11 +257,11 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="550dp"
+        android:layout_marginTop="555dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="form"
         android:textAlignment="center"
-        android:textSize="16dp" />
+        android:textSize="14dp" />
 
     <TextView
         android:layout_width="match_parent"
@@ -258,6 +271,6 @@
         android:layout_marginTop="580dp"
         android:textAlignment="center"
         android:textColor="@color/Black"
-        android:textSize="16dp" />
+        android:textSize="14dp" />
 
 </FrameLayout>

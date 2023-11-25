@@ -34,6 +34,10 @@ class Profile : Fragment() {
             val intent = Intent(activity, LayananKonsumen::class.java)
             startActivity(intent)
         }
+        binding.gantiSandi.setOnClickListener {
+            val intent = Intent(activity, GantiKataSandi::class.java)
+            startActivity(intent)
+        }
         binding.logout.setOnClickListener {
             val intent = Intent(activity, Login::class.java)
             startActivity(intent)
