@@ -53,49 +53,7 @@ class Nutrisi : Fragment(R.layout.fragment_nutrisi) {
         fragmentTransaction.replace(R.id.frame_nutrisi, fragment)
         fragmentTransaction.commit()
     }
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        binding.img1.setOnClickListener {
-            val intent = Intent(activity, BayamActivity::class.java)
-            startActivity(intent)
-        }
-        binding.img2.setOnClickListener {
-            val intent = Intent(activity, KangkungActivity::class.java)
-            startActivity(intent)
-        }
-        binding.img3.setOnClickListener {
-            val intent = Intent(activity, DaunSingkongActivity::class.java)
-            startActivity(intent)
-        }
-        binding.img4.setOnClickListener {
-            val intent = Intent(activity, BrokoliActivity::class.java)
-            startActivity(intent)
-        }
-        binding.img5.setOnClickListener {
-            val intent = Intent(activity, Tahuctivity::class.java)
-            startActivity(intent)
-        }
-        binding.img6.setOnClickListener {
-            val intent = Intent(activity, TempeActivity::class.java)
-            startActivity(intent)
-        }
-        binding.img7.setOnClickListener {
-            val intent = Intent(activity, KacangMerahActivity::class.java)
-            startActivity(intent)
-        }
-        binding.img8.setOnClickListener {
-            val intent = Intent(activity, HatiActivity::class.java)
-            startActivity(intent)
-        }
-        binding.img9.setOnClickListener {
-            val intent = Intent(activity, DagingMerahActivity::class.java)
-            startActivity(intent)
-        }
-        binding.img10.setOnClickListener {
-            val intent = Intent(activity, UnggasActivity::class.java)
-            startActivity(intent)
-        }
-    }
+
 
 }
 
