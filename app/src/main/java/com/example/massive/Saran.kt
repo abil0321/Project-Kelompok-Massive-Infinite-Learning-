@@ -33,7 +33,7 @@ class Saran : Fragment(R.layout.fragment_saran) {
         return binding.root
         }
 
-    override fun OnViewCreated (view: View, savedInstanceState: Bundle){
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.img1.setOnClickListener{
             val intent = Intent(activity, BayamActivity::class.java)
@@ -84,5 +84,9 @@ class Saran : Fragment(R.layout.fragment_saran) {
             val intent = Intent(activity, UnggasActivity::class.java)
             startActivity(intent)
         }
+    }
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 }

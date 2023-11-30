@@ -31,11 +31,15 @@ class Nutrisi : Fragment(R.layout.fragment_nutrisi) {
         return binding.root
     }
 
-//    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-//        super.onViewCreated(view, savedInstanceState)
-//        setUpBottomNavigation()
-//        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
-//    }
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        setUpBottomNavigation()
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+
+        replaceFragment(Saran())
+
+        binding.topNavBar.setItemSelected(R.id.tv_saran)
+    }
 
     private fun setUpBottomNavigation() {
         binding.topNavBar.setOnItemSelectedListener {

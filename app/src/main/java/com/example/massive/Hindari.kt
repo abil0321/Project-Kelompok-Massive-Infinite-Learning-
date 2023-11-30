@@ -35,8 +35,9 @@ class Hindari : Fragment(R.layout.fragment_hindari) {
     }
 
 
-    override fun OnViewCreated (view: View, savedInstanceState: Bundle){
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
         binding.img11.setOnClickListener{
             val intent = Intent(activity, BayamActivity::class.java)
             startActivity(intent)
@@ -86,5 +87,10 @@ class Hindari : Fragment(R.layout.fragment_hindari) {
             val intent = Intent(activity, UnggasActivity::class.java)
             startActivity(intent)
         }
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 }
