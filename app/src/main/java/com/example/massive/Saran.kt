@@ -39,6 +39,10 @@ class Saran : Fragment(R.layout.fragment_saran) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        binding.rating1.setOnRatingBarChangeListener { ratingBar, rating, fromUser ->
+            Toast.makeText(requireContext(), "Favorite", Toast.LENGTH_SHORT).show()
+        }
+
         binding.img1.setOnClickListener{
             val intent = Intent(activity, BayamActivity::class.java)
             startActivity(intent)

@@ -67,12 +67,16 @@
 
                     <RatingBar
                         android:id="@+id/rating1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
                         android:layout_gravity="end"
                         android:numStars="1"
+                        android:stepSize="1"
+                        android:progress="@android:color/holo_purple"
                         android:layout_marginTop="15dp"
-                        android:layout_marginRight="20dp" />
+                        android:layout_marginRight="20dp"
+                        android:scaleX="0.8"
+                        android:scaleY="0.8"/>
 
                 </androidx.cardview.widget.CardView>
 
