@@ -72,6 +72,7 @@
                         android:layout_gravity="end"
                         android:numStars="1"
                         android:stepSize="1"
+                        android:progressBackgroundTint="#720DEE"
                         android:progress="@android:color/holo_purple"
                         android:layout_marginTop="15dp"
                         android:layout_marginRight="20dp"
