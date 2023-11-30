@@ -7,11 +7,9 @@
     tools:context=".Saran">
 
 
-
-
     <FrameLayout
         android:id="@+id/frame_saran"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="-25dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
