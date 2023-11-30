@@ -6,6 +6,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.RatingBar
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatDelegate
 import com.example.massive.Information.BayamActivity
 import com.example.massive.Information.BrokoliActivity
@@ -31,10 +33,12 @@ class Saran : Fragment(R.layout.fragment_saran) {
     ): View {
         _binding = FragmentSaranBinding.inflate(inflater, container, false)
         return binding.root
+
         }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
         binding.img1.setOnClickListener{
             val intent = Intent(activity, BayamActivity::class.java)
             startActivity(intent)
