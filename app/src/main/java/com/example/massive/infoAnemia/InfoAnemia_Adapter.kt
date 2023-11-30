@@ -26,6 +26,10 @@ class InfoAnemia_Adapter(private val context: Context, private val superhero: Li
             descInfoAnemia.text = superhero.descInfoAnemia
             dateInfoAnemia.text = superhero.dateInfoAnemia
             btnInfoAnemia.text = superhero.btnInfoAnemia.toString()
+
+            itemView.setOnClickListener {
+                listener(superhero)
+            }
         }
 
     }

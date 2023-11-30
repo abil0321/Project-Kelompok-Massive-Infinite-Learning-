@@ -1,5 +1,6 @@
 package com.example.massive.infoAnemia
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -7,6 +8,9 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.massive.R
 
 class InfoAnemiaActivity : AppCompatActivity() {
+    companion object{
+        val INTENT_PARCELABLE = "OBJECT_INTENT"
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_info_anemia)
@@ -39,7 +43,9 @@ class InfoAnemiaActivity : AppCompatActivity() {
         recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.setHasFixedSize(true)
         recyclerView.adapter = InfoAnemia_Adapter(this, infoanemialist){
-
+            val intent = Intent (this, DetailInfoAnemiaActivity::class.java)
+            intent.putExtra(INTENT_PARCELABLE, it)
+            startActivity(intent)
         }
     }
 }
