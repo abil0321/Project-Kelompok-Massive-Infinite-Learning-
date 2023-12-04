@@ -28,36 +28,46 @@
 
     </LinearLayout>
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout7"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginTop="20dp"
-        android:hint="Beritahu Kami"
-        app:counterEnabled="true"
-
+    <RelativeLayout
+        android:layout_width="350sp"
+        android:layout_height="600sp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/border"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+        app:layout_constraintTop_toTopOf="@+id/linearLayout" >
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/Username"
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="350dp"
-            android:gravity="top"
-            android:ems="10"
-            android:fontFamily="@font/poppins_regular"
-            android:inputType="textMultiLine"
-            android:lines="15"
-            android:overScrollMode="always"
-            android:scrollbars="vertical"
-            android:scrollbarStyle="insideInset"
-            android:scrollHorizontally="false"
-            android:textColor="@color/Black"
-            android:textSize="13sp" />
-    </com.google.android.material.textfield.TextInputLayout>
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="top"
+                    android:text="Aplikasi Ciura mobile interaktif untuk membantu pasien anemia, yang bertujuan untuk memberikan pengetahuan yang komprehensif tentang anemia, termasuk penyebab, gejala, dan langkah-langkah pemulihannya. Melalui konten yang menarik seperti video, artikel, dan infografis, dengan begitu pengguna dapat dengan mudah memahami informasi.
+                                Selain itu, aplikasi ini juga menawarkan rekomendasi nutrisi yang dipersonalisasi untuk pencegahan dan  pengobatan hingga reminder waktu untuk meminum obat anemia itu sendiri. Pengguna dapat mengunggah hasil tes darah mereka, yang akan memberikan informasi yang disesuaikan dengan status anemia mereka."
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
