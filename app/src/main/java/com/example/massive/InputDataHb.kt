@@ -15,5 +15,8 @@ class InputDataHb : AppCompatActivity() {
         binding.btnSimpan.setOnClickListener {
             startActivity(Intent(this, AnemiaStatus::class.java))
         }
+        binding.btnBatal.setOnClickListener {
+            startActivity(Intent(this, AnemiaStatus::class.java))
+        }
     }
 }

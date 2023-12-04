@@ -43,7 +43,7 @@ class AnemiaStatus : AppCompatActivity() {
         entries.add(Entry(1f, 9f))
         entries.add(Entry(2f, 15f))
         entries.add(Entry(3f, 17f))
-        entries.add(Entry(4f, 12f))
+        entries.add(Entry(5f, 20f))
 
         val dataSet = LineDataSet(entries, "Hemoglobin")
 

@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Hindari">
 
     <FrameLayout
@@ -33,20 +34,24 @@
                     android:textStyle="bold"
                     android:textSize="22sp"/>
 
-                <LinearLayout
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/img11"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="75dp"
                     android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="10dp"
                     android:background="@drawable/top_background"
                     android:orientation="vertical">
 
 
-                    <ImageButton
-                        android:id="@+id/img11"
+                    <ImageView
                         android:layout_width="80dp"
-                        android:layout_height="72dp"
+                        android:layout_height="65dp"
                         android:layout_marginLeft="10dp"
-                        android:layout_marginTop="2dp"
+                        android:layout_marginTop="5dp"
                         android:background="@drawable/teh" />
 
 
@@ -56,35 +61,43 @@
                         android:layout_gravity="center"
                         android:layout_marginLeft="10dp"
                         android:text="Teh"
-                        android:layout_marginTop="-50dp"
                         android:textStyle="bold"
                         android:textSize="20sp" />
 
-                    <ImageView
-                        android:id="@+id/Button1"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
+                    <RatingBar
+                        android:id="@+id/rating11"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
                         android:layout_gravity="end"
-                        android:layout_marginTop="-45dp"
-                        android:layout_marginRight="10dp"
-                        android:clickable="false"
-                        android:focusable="false"
-                        android:src="@drawable/baseline_star_rate_24" />
+                        android:numStars="1"
+                        android:stepSize="1"
+                        android:progressBackgroundTint="#720DEE"
+                        android:progress="@android:color/holo_purple"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="20dp"
+                        android:scaleX="0.8"
+                        android:scaleY="0.8"/>
 
-                </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
-                <LinearLayout
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/img12"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="75dp"
                     android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="10dp"
+                    android:background="@drawable/top_background"
                     android:orientation="vertical">
 
-                    <ImageButton
-                        android:id="@+id/img12"
+
+                    <ImageView
                         android:layout_width="80dp"
-                        android:layout_height="72dp"
+                        android:layout_height="65dp"
                         android:layout_marginLeft="10dp"
-                        android:layout_marginTop="2dp"
+                        android:layout_marginTop="5dp"
                         android:background="@drawable/kopi" />
 
 
@@ -94,75 +107,87 @@
                         android:layout_gravity="center"
                         android:layout_marginLeft="10dp"
                         android:text="Kopi"
-                        android:layout_marginTop="-50dp"
                         android:textStyle="bold"
                         android:textSize="20sp" />
 
-                    <ImageView
-                        android:id="@+id/Button2"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
+                    <RatingBar
+                        android:id="@+id/rating12"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
                         android:layout_gravity="end"
-                        android:layout_marginTop="-45dp"
-                        android:layout_marginRight="10dp"
-                        android:clickable="false"
-                        android:focusable="false"
-                        android:src="@drawable/baseline_star_border_24" />
+                        android:numStars="1"
+                        android:stepSize="1"
+                        android:progressBackgroundTint="#720DEE"
+                        android:progress="@android:color/holo_purple"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="20dp"
+                        android:scaleX="0.8"
+                        android:scaleY="0.8"/>
 
-                </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
-                <LinearLayout
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/img13"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="75dp"
                     android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="10dp"
+                    android:background="@drawable/top_background"
                     android:orientation="vertical">
 
-                    <ImageButton
-                        android:id="@+id/img13"
+                    <ImageView
                         android:layout_width="80dp"
-                        android:layout_height="72dp"
+                        android:layout_height="65dp"
                         android:layout_marginLeft="10dp"
-                        android:layout_marginTop="2dp"
+                        android:layout_marginTop="5dp"
                         android:background="@drawable/biji" />
 
-
                     <TextView
-                        android:layout_width="180dp"
+                        android:layout_width="124dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:text="Biji- bijian"
-                        android:layout_marginLeft="38dp"
-                        android:layout_marginTop="-50dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="Biji-bijian"
                         android:textStyle="bold"
                         android:textSize="20sp" />
 
-                    <ImageView
-                        android:id="@+id/Button3"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
+                    <RatingBar
+                        android:id="@+id/rating13"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
                         android:layout_gravity="end"
-                        android:layout_marginTop="-45dp"
-                        android:layout_marginRight="10dp"
-                        android:clickable="false"
-                        android:focusable="false"
-                        android:src="@drawable/baseline_star_border_24" />
+                        android:numStars="1"
+                        android:stepSize="1"
+                        android:progressBackgroundTint="#720DEE"
+                        android:progress="@android:color/holo_purple"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="20dp"
+                        android:scaleX="0.8"
+                        android:scaleY="0.8"/>
 
-                </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
-                <LinearLayout
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/img14"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="75dp"
                     android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="10dp"
+                    android:background="@drawable/top_background"
                     android:orientation="vertical">
 
-                    <ImageButton
-                        android:id="@+id/img14"
+                    <ImageView
                         android:layout_width="80dp"
-                        android:layout_height="72dp"
+                        android:layout_height="65dp"
                         android:layout_marginLeft="10dp"
-                        android:layout_marginTop="2dp"
+                        android:layout_marginTop="5dp"
                         android:background="@drawable/jagung" />
-
 
                     <TextView
                         android:layout_width="124dp"
@@ -170,22 +195,24 @@
                         android:layout_gravity="center"
                         android:layout_marginLeft="10dp"
                         android:text="Jagung"
-                        android:layout_marginTop="-50dp"
                         android:textStyle="bold"
                         android:textSize="20sp" />
 
-                    <ImageView
-                        android:id="@+id/Button4"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
+                    <RatingBar
+                        android:id="@+id/rating14"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
                         android:layout_gravity="end"
-                        android:layout_marginTop="-45dp"
-                        android:layout_marginRight="10dp"
-                        android:clickable="false"
-                        android:focusable="false"
-                        android:src="@drawable/baseline_star_border_24" />
+                        android:numStars="1"
+                        android:stepSize="1"
+                        android:progressBackgroundTint="#720DEE"
+                        android:progress="@android:color/holo_purple"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="20dp"
+                        android:scaleX="0.8"
+                        android:scaleY="0.8"/>
 
-                </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
                 <TextView
                     android:layout_width="match_parent"
@@ -195,20 +222,24 @@
                     android:textStyle="bold"
                     android:textSize="22sp"/>
 
-                <LinearLayout
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/img15"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="75dp"
                     android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="10dp"
+                    android:background="@drawable/top_background"
                     android:orientation="vertical">
 
-                    <ImageButton
-                        android:id="@+id/img15"
+                    <ImageView
                         android:layout_width="80dp"
-                        android:layout_height="72dp"
+                        android:layout_height="65dp"
                         android:layout_marginLeft="10dp"
-                        android:layout_marginTop="2dp"
+                        android:layout_marginTop="5dp"
                         android:background="@drawable/susu" />
-
 
                     <TextView
                         android:layout_width="124dp"
@@ -216,37 +247,43 @@
                         android:layout_gravity="center"
                         android:layout_marginLeft="10dp"
                         android:text="Susu"
-                        android:layout_marginTop="-50dp"
                         android:textStyle="bold"
                         android:textSize="20sp" />
 
-                    <ImageView
-                        android:id="@+id/Button5"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
+                    <RatingBar
+                        android:id="@+id/rating15"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
                         android:layout_gravity="end"
-                        android:layout_marginTop="-45dp"
-                        android:layout_marginRight="10dp"
-                        android:clickable="false"
-                        android:focusable="false"
-                        android:src="@drawable/baseline_star_border_24" />
+                        android:numStars="1"
+                        android:stepSize="1"
+                        android:progressBackgroundTint="#720DEE"
+                        android:progress="@android:color/holo_purple"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="20dp"
+                        android:scaleX="0.8"
+                        android:scaleY="0.8"/>
 
-                </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
-                <LinearLayout
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/img16"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="75dp"
                     android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="10dp"
+                    android:background="@drawable/top_background"
                     android:orientation="vertical">
 
-                    <ImageButton
-                        android:id="@+id/img16"
+                    <ImageView
                         android:layout_width="80dp"
-                        android:layout_height="72dp"
+                        android:layout_height="65dp"
                         android:layout_marginLeft="10dp"
-                        android:layout_marginTop="2dp"
+                        android:layout_marginTop="5dp"
                         android:background="@drawable/yogurt" />
-
 
                     <TextView
                         android:layout_width="124dp"
@@ -254,60 +291,68 @@
                         android:layout_gravity="center"
                         android:layout_marginLeft="10dp"
                         android:text="Yogurt"
-                        android:layout_marginTop="-50dp"
                         android:textStyle="bold"
                         android:textSize="20sp" />
 
-                    <ImageView
-                        android:id="@+id/Button6"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
+                    <RatingBar
+                        android:id="@+id/rating16"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
                         android:layout_gravity="end"
-                        android:layout_marginTop="-45dp"
-                        android:layout_marginRight="10dp"
-                        android:clickable="false"
-                        android:focusable="false"
-                        android:src="@drawable/baseline_star_border_24" />
+                        android:numStars="1"
+                        android:stepSize="1"
+                        android:progressBackgroundTint="#720DEE"
+                        android:progress="@android:color/holo_purple"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="20dp"
+                        android:scaleX="0.8"
+                        android:scaleY="0.8"/>
 
-                </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
-                <LinearLayout
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/img17"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="75dp"
                     android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="10dp"
+                    android:background="@drawable/top_background"
                     android:orientation="vertical">
 
-                    <ImageButton
-                        android:id="@+id/img17"
+                    <ImageView
                         android:layout_width="80dp"
-                        android:layout_height="72dp"
+                        android:layout_height="65dp"
                         android:layout_marginLeft="10dp"
-                        android:layout_marginTop="2dp"
+                        android:layout_marginTop="5dp"
                         android:background="@drawable/keju" />
 
-
                     <TextView
-                        android:layout_width="180dp"
+                        android:layout_width="124dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginLeft="38dp"
+                        android:layout_marginLeft="10dp"
                         android:text="Keju"
-                        android:layout_marginTop="-50dp"
                         android:textStyle="bold"
                         android:textSize="20sp" />
 
-                    <ImageView
-                        android:id="@+id/Button7"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
+                    <RatingBar
+                        android:id="@+id/rating17"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
                         android:layout_gravity="end"
-                        android:layout_marginTop="-45dp"
-                        android:layout_marginRight="10dp"
-                        android:clickable="false"
-                        android:focusable="false"
-                        android:src="@drawable/baseline_star_border_24" />
+                        android:numStars="1"
+                        android:stepSize="1"
+                        android:progressBackgroundTint="#720DEE"
+                        android:progress="@android:color/holo_purple"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="20dp"
+                        android:scaleX="0.8"
+                        android:scaleY="0.8"/>
 
-                </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
                 <TextView
                     android:layout_width="match_parent"
@@ -317,97 +362,112 @@
                     android:textStyle="bold"
                     android:textSize="22sp"/>
 
-                <LinearLayout
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/img18"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="75dp"
                     android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="10dp"
+                    android:background="@drawable/top_background"
                     android:orientation="vertical">
 
-                    <ImageButton
-                        android:id="@+id/img18"
+                    <ImageView
                         android:layout_width="80dp"
-                        android:layout_height="72dp"
+                        android:layout_height="65dp"
                         android:layout_marginLeft="10dp"
-                        android:layout_marginTop="2dp"
+                        android:layout_marginTop="5dp"
                         android:background="@drawable/beras" />
-
 
                     <TextView
                         android:layout_width="124dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginLeft="10dp"
-                        android:text="Beras merah"
-                        android:layout_marginTop="-50dp"
+                        android:text="Beras Merah"
                         android:textStyle="bold"
                         android:textSize="20sp" />
 
-                    <ImageView
-                        android:id="@+id/Button8"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
+                    <RatingBar
+                        android:id="@+id/rating18"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
                         android:layout_gravity="end"
-                        android:layout_marginTop="-45dp"
-                        android:layout_marginRight="10dp"
-                        android:clickable="false"
-                        android:focusable="false"
-                        android:src="@drawable/baseline_star_border_24" />
+                        android:numStars="1"
+                        android:stepSize="1"
+                        android:progressBackgroundTint="#720DEE"
+                        android:progress="@android:color/holo_purple"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="20dp"
+                        android:scaleX="0.8"
+                        android:scaleY="0.8"/>
 
-                </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
-
-                <LinearLayout
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/img19"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="75dp"
                     android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="10dp"
+                    android:background="@drawable/top_background"
                     android:orientation="vertical">
 
-                    <ImageButton
-                        android:id="@+id/img19"
+                    <ImageView
                         android:layout_width="80dp"
-                        android:layout_height="72dp"
+                        android:layout_height="65dp"
                         android:layout_marginLeft="10dp"
-                        android:layout_marginTop="2dp"
+                        android:layout_marginTop="5dp"
                         android:background="@drawable/gandum" />
 
-
                     <TextView
-                        android:layout_width="180dp"
+                        android:layout_width="124dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
                         android:text="Gandum"
-                        android:layout_marginLeft="38dp"
-                        android:layout_marginTop="-50dp"
                         android:textStyle="bold"
                         android:textSize="20sp" />
 
-                    <ImageView
-                        android:id="@+id/Button9"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
+                    <RatingBar
+                        android:id="@+id/rating19"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
                         android:layout_gravity="end"
-                        android:layout_marginTop="-45dp"
-                        android:layout_marginRight="10dp"
-                        android:clickable="false"
-                        android:focusable="false"
-                        android:src="@drawable/baseline_star_border_24" />
+                        android:numStars="1"
+                        android:stepSize="1"
+                        android:progressBackgroundTint="#720DEE"
+                        android:progress="@android:color/holo_purple"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="20dp"
+                        android:scaleX="0.8"
+                        android:scaleY="0.8"/>
 
-                </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
-                <LinearLayout
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/img20"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="75dp"
                     android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="10dp"
+                    android:background="@drawable/top_background"
                     android:orientation="vertical">
 
-                    <ImageButton
-                        android:id="@+id/img20"
+                    <ImageView
                         android:layout_width="80dp"
-                        android:layout_height="72dp"
+                        android:layout_height="65dp"
                         android:layout_marginLeft="10dp"
-                        android:layout_marginTop="2dp"
+                        android:layout_marginTop="5dp"
                         android:background="@drawable/ketan" />
-
 
                     <TextView
                         android:layout_width="124dp"
@@ -415,22 +475,24 @@
                         android:layout_gravity="center"
                         android:layout_marginLeft="10dp"
                         android:text="Ketan"
-                        android:layout_marginTop="-50dp"
                         android:textStyle="bold"
                         android:textSize="20sp" />
 
-                    <ImageView
-                        android:id="@+id/Button10"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
+                    <RatingBar
+                        android:id="@+id/rating20"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
                         android:layout_gravity="end"
-                        android:layout_marginTop="-45dp"
-                        android:layout_marginRight="10dp"
-                        android:clickable="false"
-                        android:focusable="false"
-                        android:src="@drawable/baseline_star_border_24" />
+                        android:numStars="1"
+                        android:stepSize="1"
+                        android:progressBackgroundTint="#720DEE"
+                        android:progress="@android:color/holo_purple"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="20dp"
+                        android:scaleX="0.8"
+                        android:scaleY="0.8"/>
 
-                </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -446,8 +508,8 @@
 
             </LinearLayout>
 
-
         </ScrollView>
+
     </FrameLayout>
 
 </FrameLayout>
