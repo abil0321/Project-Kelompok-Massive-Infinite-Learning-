@@ -16,7 +16,15 @@ import com.example.massive.Information.KangkungActivity
 import com.example.massive.Information.Tahuctivity
 import com.example.massive.Information.TempeActivity
 import com.example.massive.Information.UnggasActivity
+import com.example.massive.Information2.BerasmerahActivity
+import com.example.massive.Information2.BijibijianActivity
+import com.example.massive.Information2.GandumActivity
+import com.example.massive.Information2.JagungActivity
+import com.example.massive.Information2.KejuActivity
+import com.example.massive.Information2.KopiActivity
+import com.example.massive.Information2.SusuActivity
 import com.example.massive.Information2.TehActivity
+import com.example.massive.Information2.YogurtActivity
 import com.example.massive.databinding.FragmentHindariBinding
 
 class Hindari : Fragment(R.layout.fragment_hindari) {
@@ -42,49 +50,45 @@ class Hindari : Fragment(R.layout.fragment_hindari) {
         }
         super.onViewCreated(view, savedInstanceState)
         binding.img12.setOnClickListener{
-            val intent = Intent(activity, KangkungActivity::class.java)
+            val intent = Intent(activity, KopiActivity::class.java)
             startActivity(intent)
         }
         super.onViewCreated(view, savedInstanceState)
         binding.img13.setOnClickListener{
-            val intent = Intent(activity, DaunSingkongActivity::class.java)
+            val intent = Intent(activity, BijibijianActivity::class.java)
             startActivity(intent)
         }
         super.onViewCreated(view, savedInstanceState)
         binding.img14.setOnClickListener{
-            val intent = Intent(activity, BrokoliActivity::class.java)
+            val intent = Intent(activity, JagungActivity::class.java)
             startActivity(intent)
         }
         super.onViewCreated(view, savedInstanceState)
         binding.img15.setOnClickListener{
-            val intent = Intent(activity, Tahuctivity::class.java)
+            val intent = Intent(activity, SusuActivity::class.java)
             startActivity(intent)
         }
         super.onViewCreated(view, savedInstanceState)
         binding.img16.setOnClickListener{
-            val intent = Intent(activity, TempeActivity::class.java)
+            val intent = Intent(activity, KejuActivity::class.java)
             startActivity(intent)
         }
         super.onViewCreated(view, savedInstanceState)
         binding.img17.setOnClickListener{
-            val intent = Intent(activity, KacangMerahActivity::class.java)
+            val intent = Intent(activity, YogurtActivity::class.java)
             startActivity(intent)
         }
         super.onViewCreated(view, savedInstanceState)
         binding.img18.setOnClickListener{
-            val intent = Intent(activity, HatiActivity::class.java)
+            val intent = Intent(activity, BerasmerahActivity::class.java)
             startActivity(intent)
         }
         super.onViewCreated(view, savedInstanceState)
         binding.img19.setOnClickListener{
-            val intent = Intent(activity, DagingMerahActivity::class.java)
+            val intent = Intent(activity, GandumActivity::class.java)
             startActivity(intent)
         }
-        super.onViewCreated(view, savedInstanceState)
-        binding.img20.setOnClickListener{
-            val intent = Intent(activity, UnggasActivity::class.java)
-            startActivity(intent)
-        }
+
     }
 
     override fun onDestroyView() {

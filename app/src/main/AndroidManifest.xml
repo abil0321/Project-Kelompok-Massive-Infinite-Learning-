@@ -12,9 +12,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Massive"
         tools:targetApi="31">
-<!--        <activity-->
-<!--            android:name=".Information2.TehActivity"-->
-<!--            android:exported="false" />-->
         <activity
             android:name=".infoAnemia.DetailInfoAnemiaActivity"
             android:exported="false" />
@@ -25,7 +22,31 @@
             android:name=".AturPengingat"
             android:exported="false" />
         <activity
+            android:name=".Information2.GandumActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Information2.BerasmerahActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Information2.YogurtActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Information2.KejuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Information2.SusuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Information2.JagungActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Information2.BijibijianActivity"
+            android:exported="false" />
+        <activity
             android:name=".Information2.TehActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Information2.KopiActivity"
             android:exported="false" />
         <activity
             android:name=".Information.UnggasActivity"

@@ -6,16 +6,16 @@ import android.os.Bundle
 import com.example.massive.Nutrisi
 import com.example.massive.R
 import com.example.massive.Profile
-import com.example.massive.databinding.ActivityTehBinding
+import com.example.massive.databinding.ActivityGandumBinding
 
-class TehActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityTehBinding
+class GandumActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityGandumBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityTehBinding.inflate(layoutInflater)
+        binding = ActivityGandumBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.back11.setOnClickListener {
+        binding.back19.setOnClickListener {
             onBackPressed()
         }
     }
