@@ -13,7 +13,10 @@
         android:theme="@style/Theme.Massive"
         tools:targetApi="31">
         <activity
-            android:name=".infoAnemia.DetailInfoAnemiaActivity"
+            android:name=".Info1"
+            android:exported="false" />
+        <activity
+            android:name=".InfoAnemia"
             android:exported="false" />
         <activity
             android:name=".GantiKataSandi"
@@ -77,9 +80,6 @@
             android:exported="false" />
         <activity
             android:name=".Information.BayamActivity"
-            android:exported="false" />
-        <activity
-            android:name=".infoAnemia.InfoAnemiaActivity"
             android:exported="false" />
         <activity
             android:name=".InputDataHb"

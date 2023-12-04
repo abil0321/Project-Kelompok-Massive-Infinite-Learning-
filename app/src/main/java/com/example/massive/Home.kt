@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import com.example.massive.databinding.FragmentHomeBinding
-import com.example.massive.infoAnemia.InfoAnemiaActivity
 
 class Home : Fragment() {
     private lateinit var binding: FragmentHomeBinding
@@ -31,9 +30,12 @@ class Home : Fragment() {
             val intent = Intent(activity, AnemiaStatus::class.java)
             startActivity(intent)
         }
-
         binding.tvLanjut.setOnClickListener {
-            val intent = Intent(requireActivity(), InfoAnemiaActivity::class.java)
+            val intent = Intent(requireActivity(), InfoAnemia::class.java)
+            startActivity(intent)
+        }
+        binding.info1.setOnClickListener {
+            val intent = Intent(requireActivity(), Info1::class.java)
             startActivity(intent)
         }
     }

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Info1">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/top_background"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:drawableStart="@drawable/ic_back"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Apa itu Anemia?"
+            android:textColor="#EE0D50"
+            android:textSize="22sp" />
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/top_background"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="180dp"
+            android:background="@drawable/info" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="270dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Kurang darah atau anemia adalah salah satu masalah kesehatan yang cukup umum terjadi. Kondisi ini terjadi ketika jumlah sel darah merah dalam tubuh lebih rendah dari normal."
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="390dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Gejala umum pengidap anemia adalah lelah, sakit kepala, hingga sesak napas. Kondisi ini bisa dialami oleh semua kalangan, terlebih perempuan yang sedang menstruasi."
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="510dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Gejala umum pengidap anemia adalah lelah, sakit kepala, hingga sesak napas. Kondisi ini bisa dialami oleh semua kalangan, terlebih perempuan yang sedang menstruasi."
+            android:textSize="16sp" />
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

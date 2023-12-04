@@ -20,7 +20,6 @@ class EditProfile : AppCompatActivity() {
             onBackPressed()
         }
     }
-
     private fun navigateToProfileFragment() {
         startActivity(Intent(this, Profile::class.java))
     }
