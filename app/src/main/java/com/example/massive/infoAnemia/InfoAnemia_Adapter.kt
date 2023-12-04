@@ -17,15 +17,9 @@ class InfoAnemia_Adapter(private val context: Context, private val superhero: Li
 
         val imgInfoAnemia = view.findViewById<ImageView>(R.id.img_item_photo)
         val titleInfoAnemia = view.findViewById<TextView>(R.id.tv_item_name)
-        val descInfoAnemia = view.findViewById<TextView>(R.id.tv_item_description)
-        val dateInfoAnemia = view.findViewById<TextView>(R.id.tv_item_date)
-        val btnInfoAnemia = view.findViewById<TextView>(R.id.btn_item)
         fun bindView(superhero: InfoAnemia_Model, listener: (InfoAnemia_Model) -> Unit){
             imgInfoAnemia.setImageResource(superhero.imgInfoAnemia)
             titleInfoAnemia.text = superhero.titleInfoAnemia
-            descInfoAnemia.text = superhero.descInfoAnemia
-            dateInfoAnemia.text = superhero.dateInfoAnemia
-            btnInfoAnemia.text = superhero.btnInfoAnemia.toString()
 
             itemView.setOnClickListener {
                 listener(superhero)

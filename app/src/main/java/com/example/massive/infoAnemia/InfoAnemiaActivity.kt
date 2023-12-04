@@ -18,24 +18,17 @@ class InfoAnemiaActivity : AppCompatActivity() {
         val infoanemialist = listOf<InfoAnemia_Model>(
             InfoAnemia_Model(
                 R.drawable.info,
-                "Apa itu anemia?",
-                "Anemia merupakan kondisi medis yang terjadi ketika jumlah sel darah merah dalam lebih rendah dari jumlah normal",
-                "22 November 2023",
-                "Baca"
+                "Apa itu anemia?"
             ),
             InfoAnemia_Model(
                 R.drawable.info2,
                 "Apa saja jenis jenis anemia?",
-                "Terdapat beberapa jenis anemia yang dapat mempengaruhi individu. Beberapa jenis anemia yang umum meliputi",
-                "24 November 2023",
-                "Baca"
+
             ),
             InfoAnemia_Model(
                 R.drawable.info3,
                 "Cara mencegah anemia",
-                "Jika kamu ingin mencegah anemia, sebaiknya perbanyak konsumsi makanan yang kaya akan zat besi. Berikut cara pencegahan anemia",
-                "26 November 2023",
-                "Baca"
+
             )
         )
 

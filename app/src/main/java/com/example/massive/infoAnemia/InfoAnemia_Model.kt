@@ -7,8 +7,5 @@ import kotlinx.android.parcel.Parcelize
 data class InfoAnemia_Model(
     val imgInfoAnemia: Int,
     val titleInfoAnemia: String,
-    val descInfoAnemia:String,
-    val dateInfoAnemia:String,
-    val btnInfoAnemia: String
 
 ) : Parcelable

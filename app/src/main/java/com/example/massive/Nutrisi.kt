@@ -1,22 +1,11 @@
 package com.example.massive
 
-import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.fragment.app.Fragment
-import com.example.massive.Information.BayamActivity
-import com.example.massive.Information.BrokoliActivity
-import com.example.massive.Information.DagingMerahActivity
-import com.example.massive.Information.DaunSingkongActivity
-import com.example.massive.Information.HatiActivity
-import com.example.massive.Information.KacangMerahActivity
-import com.example.massive.Information.KangkungActivity
-import com.example.massive.Information.Tahuctivity
-import com.example.massive.Information.TempeActivity
-import com.example.massive.Information.UnggasActivity
 import com.example.massive.databinding.FragmentNutrisiBinding
 
 class Nutrisi : Fragment(R.layout.fragment_nutrisi) {

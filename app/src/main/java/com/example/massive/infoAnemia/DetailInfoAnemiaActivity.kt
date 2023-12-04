@@ -16,7 +16,6 @@ class DetailInfoAnemiaActivity : AppCompatActivity() {
 
         val imgInfoAnemia = findViewById<ImageView>(R.id.img_item_photo)
         val titleInfoAnemia = findViewById<TextView>(R.id.tv_item_name)
-        val descInfoAnemia = findViewById<TextView>(R.id.tv_item_description)
 
         titleInfoAnemia.setOnClickListener {
             val intent = Intent(this, InfoAnemiaActivity::class.java)
@@ -25,6 +24,5 @@ class DetailInfoAnemiaActivity : AppCompatActivity() {
 
         imgInfoAnemia.setImageResource(detailinfo?.imgInfoAnemia!!)
         titleInfoAnemia.text = detailinfo.titleInfoAnemia
-        descInfoAnemia.text = detailinfo.descInfoAnemia
     }
 }

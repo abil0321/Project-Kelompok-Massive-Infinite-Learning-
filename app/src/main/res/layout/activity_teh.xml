@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Information.BayamActivity">
+    tools:context=".Information2.TehActivity">
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -15,7 +15,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/back10"
+            android:id="@+id/back11"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -69,7 +69,7 @@
                 android:layout_height="100dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="60dp"
-                android:background="@drawable/bayam1"/>
+                android:background="@drawable/teh"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -85,7 +85,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="top"
-                    android:text="Menambahkan zat besi pada bayam berperan untuk pembentukan hemoglobin. Bayam hijau memiliki banyak manfaat yang sangat baik karena merupakan sumber kalsium, vitamin A, Vitamin C, dan Vitamin E, serat dan juga betakaroten. Selain itu bayam juga memiliki kandungan zat besi yang sangat tinggi untuk mencegah anemia."
+                    android:text="Teh mengandung zat polifenol yang menghambat penyerapan zat besi. Diantara jenis teh, teh hitam merupakan jenis yang paling kuat menghambat penyerapan zat besi. Selain itu teh juga mengandung tanin yang dapat menghambat penyerapan zat besi.
+
+sebaiknya tidak mengkonsumsi teh bersamaan dengan makan besar, terutama jika kita sedang mengalami anemia, tujuannya agar penyerapan zat besi maksimal dan kondisi anemia akibat kekurangan zat besi dapat segera teratasi"
                     android:textSize="16sp"/>
 
             </LinearLayout>
@@ -106,7 +108,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:text="Bayam"
+            android:text="Teh"
             android:textSize="20sp"
             android:textStyle="bold" />
 

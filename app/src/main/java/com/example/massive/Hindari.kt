@@ -6,7 +6,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.content.Intent
-import androidx.appcompat.app.AppCompatDelegate
 import com.example.massive.Information.BayamActivity
 import com.example.massive.Information.BrokoliActivity
 import com.example.massive.Information.DagingMerahActivity
@@ -17,9 +16,8 @@ import com.example.massive.Information.KangkungActivity
 import com.example.massive.Information.Tahuctivity
 import com.example.massive.Information.TempeActivity
 import com.example.massive.Information.UnggasActivity
+import com.example.massive.Information2.TehActivity
 import com.example.massive.databinding.FragmentHindariBinding
-import com.example.massive.databinding.FragmentNutrisiBinding
-import com.example.massive.databinding.FragmentSaranBinding
 
 class Hindari : Fragment(R.layout.fragment_hindari) {
     private var _binding: FragmentHindariBinding? = null
@@ -39,7 +37,7 @@ class Hindari : Fragment(R.layout.fragment_hindari) {
         super.onViewCreated(view, savedInstanceState)
 
         binding.img11.setOnClickListener{
-            val intent = Intent(activity, BayamActivity::class.java)
+            val intent = Intent(activity, TehActivity::class.java)
             startActivity(intent)
         }
         super.onViewCreated(view, savedInstanceState)

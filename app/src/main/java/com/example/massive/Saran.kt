@@ -6,9 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.RatingBar
 import android.widget.Toast
-import androidx.appcompat.app.AppCompatDelegate
 import com.example.massive.Information.BayamActivity
 import com.example.massive.Information.BrokoliActivity
 import com.example.massive.Information.DagingMerahActivity
@@ -19,7 +17,6 @@ import com.example.massive.Information.KangkungActivity
 import com.example.massive.Information.Tahuctivity
 import com.example.massive.Information.TempeActivity
 import com.example.massive.Information.UnggasActivity
-import com.example.massive.databinding.FragmentNutrisiBinding
 import com.example.massive.databinding.FragmentSaranBinding
 
 class Saran : Fragment(R.layout.fragment_saran) {
