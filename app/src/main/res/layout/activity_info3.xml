@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Info3Activity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/top_background"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/back23"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:drawableStart="@drawable/ic_back"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Cara mencegah anemia"
+            android:textColor="#EE0D50"
+            android:textSize="22sp" />
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/top_background"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="180dp"
+            android:background="@drawable/infoa3" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="250dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Jika kamu ingin mencegah anemia, sebaiknya perbanyak konsumsi makanan yang kaya akan zat besi. Berikut cara pencegahan anemia yang bisa kamu lakukan"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="380dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Pola Makan Bergizi.
+Konsumsilah makanan yang kaya akan zat besi, vitamin B12, folat, dan nutrisi penting lainnya yang diperlukan untuk produksi sel darah merah. Sertakan makanan seperti daging tanpa lemak, unggas, ikan, telur, polong-polongan, sayuran hijau, sereal yang diperkaya, kacang-kacangan, dan biji-bijian.
+"
+            android:textSize="16sp" />
+
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:layout_marginTop="500dp"-->
+<!--            android:fontFamily="@font/poppins_regular"-->
+<!--            android:text="2. Anemia Defisiensi Vitamin B12 : Disebabkan karena tubuh kekurangan vitamin B12 untuk pembentukan sel darah merah.-->
+<!--"-->
+<!--            android:textSize="16sp" />-->
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

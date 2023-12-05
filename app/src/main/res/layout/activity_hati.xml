@@ -54,7 +54,7 @@
                 android:id="@+id/star8"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/baseline_star_border_24"/>
+                android:background="@drawable/baseline_star_rate_24"/>
 
 
         </LinearLayout>

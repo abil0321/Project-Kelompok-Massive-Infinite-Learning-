@@ -38,5 +38,13 @@ class Home : Fragment() {
             val intent = Intent(requireActivity(), Info1::class.java)
             startActivity(intent)
         }
+        binding.info2.setOnClickListener {
+            val intent = Intent(requireActivity(), Info2Activity::class.java)
+            startActivity(intent)
+        }
+        binding.info3.setOnClickListener {
+            val intent = Intent(requireActivity(), Info3Activity::class.java)
+            startActivity(intent)
+        }
     }
 }

@@ -16,9 +16,15 @@ class InfoAnemia : AppCompatActivity() {
         binding.btnBaca1.setOnClickListener {
             startActivity(Intent(this, Info1::class.java))
         }
+        binding.btnBaca2.setOnClickListener {
+            startActivity(Intent(this, Info2Activity::class.java))
+        }
+        binding.btnBaca3.setOnClickListener {
+            startActivity(Intent(this, Info3Activity::class.java))
+        }
 
-        binding.back.setOnClickListener {
-            onBackPressed()
+        binding.backbutton.setOnClickListener {
+            startActivity(Intent(this, Home::class.java))
         }
     }
     private fun navigateToProfileFragment() {
