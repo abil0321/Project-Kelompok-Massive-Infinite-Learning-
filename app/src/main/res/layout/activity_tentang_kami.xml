@@ -54,9 +54,16 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="top"
-                    android:text="Aplikasi Ciura mobile interaktif untuk membantu pasien anemia, yang bertujuan untuk memberikan pengetahuan yang komprehensif tentang anemia, termasuk penyebab, gejala, dan langkah-langkah pemulihannya. Melalui konten yang menarik seperti video, artikel, dan infografis, dengan begitu pengguna dapat dengan mudah memahami informasi.
-                                Selain itu, aplikasi ini juga menawarkan rekomendasi nutrisi yang dipersonalisasi untuk pencegahan dan  pengobatan hingga reminder waktu untuk meminum obat anemia itu sendiri. Pengguna dapat mengunggah hasil tes darah mereka, yang akan memberikan informasi yang disesuaikan dengan status anemia mereka."
-                    android:textSize="16sp"/>
+                    android:text="     Aplikasi Ciura mobile Membantu penderita anemia serta orang-orang yang memiliki keinginan untuk menjaga kestabilan hemoglobin darah dengan menyediakan media interaktif yang memberikan pengetahuan tentang anemia berupa artikel-artikel infromatif bagi pengguna. "
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:layout_marginTop="-320dp"
+                    android:gravity="top"
+                    android:text="   Selain itu, platform ini dapat memberikan rekomendasi makanan yang seharusnya dikonsumsi untuk pencegahan dan pemulihan anemia serta makanan yang seharusnya dihindari."
+                    android:textSize="18sp"/>
 
             </LinearLayout>
 
