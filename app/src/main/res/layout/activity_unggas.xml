@@ -73,8 +73,8 @@ app:layout_constraintTop_toTopOf="@+id/linearLayout" >
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="400dp"
-        android:layout_marginTop="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         android:orientation="vertical"
@@ -83,7 +83,7 @@ app:layout_constraintTop_toTopOf="@+id/linearLayout" >
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:gravity="top"
             android:text="Daging merah termasuk ke dalam zat besi heme, yakni zat besi yang bersumber dari hewani. Konsumsi ini sebagai makanan untuk anemia. Ini bisa mem-booster zat besi dalam tubuh kita"
             android:textSize="16sp"/>

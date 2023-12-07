@@ -73,8 +73,8 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="400dp"
-                android:layout_marginTop="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:orientation="vertical"
@@ -83,7 +83,7 @@
 
                 <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:gravity="top"
                     android:text="Susu, keju dan segala produk olahannya ternyata juga tidak bagus untuk penderita anemia. Alasannya, kalsium menghalangi penyerapan zat besi dalam darah sehingga tubuh akan semakin kesulitan untuk memproduksi sel darah merah yang sangat dibutuhkan.
 Oleh karena itu, pastikan untuk tidak mengonsumsi jenis makanan dan minuman ini secara berlebihan, karena jika dikonsumsi terlalu banyak dapat menjadi pantangan makanan bagi penderita anemia."

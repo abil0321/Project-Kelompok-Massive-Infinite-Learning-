@@ -43,14 +43,14 @@
             android:layout_width="match_parent"
             android:layout_height="250dp"
             android:layout_gravity="center"
-            android:layout_marginBottom="180dp"
+            android:layout_marginBottom="200dp"
             android:background="@drawable/info" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="270dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="260dp"
             android:fontFamily="@font/poppins_regular"
             android:text="Kurang darah atau anemia adalah salah satu masalah kesehatan yang cukup umum terjadi. Kondisi ini terjadi ketika jumlah sel darah merah dalam tubuh lebih rendah dari normal."
             android:textSize="16sp" />
@@ -58,8 +58,8 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="390dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="380dp"
             android:fontFamily="@font/poppins_regular"
             android:text="Gejala umum pengidap anemia adalah lelah, sakit kepala, hingga sesak napas. Kondisi ini bisa dialami oleh semua kalangan, terlebih perempuan yang sedang menstruasi."
             android:textSize="16sp" />
@@ -67,8 +67,9 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="510dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="500dp"
+            android:layout_marginBottom="20dp"
             android:fontFamily="@font/poppins_regular"
             android:text="Gejala umum pengidap anemia adalah lelah, sakit kepala, hingga sesak napas. Kondisi ini bisa dialami oleh semua kalangan, terlebih perempuan yang sedang menstruasi."
             android:textSize="16sp" />

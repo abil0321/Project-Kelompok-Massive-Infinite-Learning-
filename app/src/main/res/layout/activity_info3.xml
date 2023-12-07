@@ -59,7 +59,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="380dp"
+            android:layout_marginTop="370dp"
+            android:layout_marginBottom="20dp"
             android:fontFamily="@font/poppins_regular"
             android:text="Pola Makan Bergizi.
 Konsumsilah makanan yang kaya akan zat besi, vitamin B12, folat, dan nutrisi penting lainnya yang diperlukan untuk produksi sel darah merah. Sertakan makanan seperti daging tanpa lemak, unggas, ikan, telur, polong-polongan, sayuran hijau, sereal yang diperkaya, kacang-kacangan, dan biji-bijian.

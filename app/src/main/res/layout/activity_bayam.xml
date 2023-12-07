@@ -74,7 +74,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="400dp"
-                android:layout_marginTop="40dp"
+                android:layout_marginTop="50dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:orientation="vertical"
@@ -83,7 +83,7 @@
 
                 <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:gravity="top"
                     android:text="Menambahkan zat besi pada bayam berperan untuk pembentukan hemoglobin. Bayam hijau memiliki banyak manfaat yang sangat baik karena merupakan sumber kalsium, vitamin A, Vitamin C, dan Vitamin E, serat dan juga betakaroten. Selain itu bayam juga memiliki kandungan zat besi yang sangat tinggi untuk mencegah anemia."
                     android:textSize="16sp"/>

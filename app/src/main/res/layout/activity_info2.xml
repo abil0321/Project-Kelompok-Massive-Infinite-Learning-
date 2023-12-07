@@ -50,7 +50,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="270dp"
+            android:layout_marginTop="260dp"
             android:fontFamily="@font/poppins_regular"
             android:text="Beberapa jenis anemia bisa memengaruhi seseorang. Berikut jenis-jenis anemia yang sering terjadi"
             android:textSize="16sp" />
@@ -59,7 +59,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="350dp"
+            android:layout_marginTop="340dp"
             android:fontFamily="@font/poppins_regular"
             android:text="1. Anemia Defensi Zat Besi : Disebabkan karena kurangnya zat besi dalam tubuh, kekurangan zat besi dapat terjadi karena pola makan yang tidak seimbang, kondisi kehamilan, atau perdarahan yang berlangsung secara kronis"
             android:textSize="16sp" />
@@ -68,7 +68,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="500dp"
+            android:layout_marginTop="490dp"
+            android:layout_marginBottom="15dp"
             android:fontFamily="@font/poppins_regular"
             android:text="2. Anemia Defisiensi Vitamin B12 : Disebabkan karena tubuh kekurangan vitamin B12 untuk pembentukan sel darah merah.
 "

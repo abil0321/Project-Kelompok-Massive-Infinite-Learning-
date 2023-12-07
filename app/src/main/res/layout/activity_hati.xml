@@ -73,8 +73,8 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="400dp"
-                android:layout_marginTop="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:orientation="vertical"
@@ -83,7 +83,7 @@
 
                 <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:gravity="top"
                     android:text="Hati sapi kaya akan zat besi yang berperan penting dalam proses produksi hemoglobin di sel darah merah. Perlu diketahui, dalam 100 gram hati sapi mengandung 6,5 miligram zat besi. Zat besi dalam hati sapi merupakan zat besi heme yang diserap lebih efektif oleh tubuh.
 Hati ayam juga merupakan tempat penyimpanan zat besi sehingga mengandung besi dengan kadar tinggi yang dibutuhkan untuk mencegah anemia. Hasil penelitian ini menunjukkan bahwa ada peningkatan kadar haemoglobin yang signifikan setelah pemberian intervensi berupa konsumsi hati ayam selama 14 hari."

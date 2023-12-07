@@ -24,7 +24,7 @@ class InfoAnemia : AppCompatActivity() {
         }
 
         binding.backbutton.setOnClickListener {
-            startActivity(Intent(this, Home::class.java))
+            startActivity(Intent(this, Dashboard::class.java))
         }
     }
     private fun navigateToProfileFragment() {

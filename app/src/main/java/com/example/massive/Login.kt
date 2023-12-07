@@ -25,6 +25,7 @@ class Login : AppCompatActivity() {
 
         val name: EditText = findViewById(R.id.et_username)
         val send: View = binding.login
+
         send.setOnClickListener {
             val fragment = Home()
             val x = name.text.toString()
