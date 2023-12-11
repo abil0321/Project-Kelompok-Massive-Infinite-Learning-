@@ -15,6 +15,9 @@ class GantiKataSandi : AppCompatActivity() {
         binding.btnAturSandi.setOnClickListener {
             onBackPressed()
         }
+        binding.textView2.setOnClickListener {
+            onBackPressed()
+        }
     }
     private fun navigateToProfileFragment() {
         startActivity(Intent(this, Profile::class.java))
