@@ -19,7 +19,11 @@ class Home : Fragment() {
         binding = FragmentHomeBinding.inflate(inflater, container, false)
         val text: TextView = binding.reciveUsername
         val value = arguments?.getString("name")
-        text.text = "Halo, $value"
+        if (value == null){
+            text.text = "Halo, Muhammad Jamaludin"
+        } else {
+            text.text = "Halo, $value"
+        }
         return binding.root
     }
 
