@@ -30,13 +30,13 @@
 
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/cardView5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/linearLayout"
-        android:layout_marginTop="20dp"
         android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
         android:layout_marginRight="30dp"
-        android:layout_marginBottom="95dp"
         app:cardCornerRadius="10dp"
         app:cardElevation="10dp">
 
@@ -60,7 +60,6 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="130dp"
-                android:layout_marginBottom="50dp"
                 android:gravity="center"
                 android:orientation="horizontal">
 
@@ -131,16 +130,25 @@
 
     </androidx.cardview.widget.CardView>
 
-    <com.github.mikephil.charting.charts.LineChart
-        android:id="@+id/lineChart"
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="320dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="50dp"
-        tools:ignore="MissingClass" />
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardView5"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp">
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/lineChart"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            tools:ignore="MissingClass" />
+
+    </androidx.cardview.widget.CardView>
 
 </RelativeLayout>
