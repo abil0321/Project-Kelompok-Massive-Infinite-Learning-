@@ -7,14 +7,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:icon="@drawable/ic_saran"
-        app:cnb_iconColor="#EE0D50"
+        app:cnb_iconColor="@color/MediumPurple"
         android:title="Saran"/>
     <item
         android:id="@+id/tv_hindari"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:icon="@drawable/ic_hindari"
-        app:cnb_iconColor="#EE0D50"
+        app:cnb_iconColor="@color/MediumPurple"
         android:title="Hindari"/>
 
 </menu>
