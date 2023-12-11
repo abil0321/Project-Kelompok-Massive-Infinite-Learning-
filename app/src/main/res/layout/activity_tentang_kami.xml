@@ -60,7 +60,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="400dp"
-                    android:layout_marginTop="-320dp"
+                    android:layout_marginTop="-300dp"
                     android:gravity="top"
                     android:text="   Selain itu, platform ini dapat memberikan rekomendasi makanan yang seharusnya dikonsumsi untuk pencegahan dan pemulihan anemia serta makanan yang seharusnya dihindari."
                     android:textSize="18sp"/>
