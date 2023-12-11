@@ -20,7 +20,7 @@
             android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"
             app:cnb_badgeColor="@color/White"
-            app:cnb_unselectedColor="@color/Gray"
+            app:cnb_unselectedColor="#EE0D50"
             app:cnb_menuResource="@menu/nav_tab"/>
 
     </LinearLayout>
