@@ -53,7 +53,7 @@ class Login : AppCompatActivity() {
                 return@setOnClickListener
             }
             if (password.isEmpty()) {
-                binding.etPassword.error = "Password Harus Diisi"
+                binding.etPassword.error = "KataSandi Harus Diisi"
                 binding.etPassword.requestFocus()
                 return@setOnClickListener
             }
