@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "467979837681",
+    "firebase_url": "https://crack-talent-405700-default-rtdb.firebaseio.com",
+    "project_id": "crack-talent-405700",
+    "storage_bucket": "crack-talent-405700.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:467979837681:android:eeb2e85c39d36cfd948950",
+        "android_client_info": {
+          "package_name": "com.example.massive"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "467979837681-r9c7177b0id696dl60qbu3bhvla2ksfj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.massive",
+            "certificate_hash": "3b08a8fc17d58658928cd51c317c4135efd57855"
+          }
+        },
+        {
+          "client_id": "467979837681-99codeu74aqi0mnqdeje70jlc86e2scc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9Exdae93upXR3UxNdlsJV60XGosCa9UE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "467979837681-99codeu74aqi0mnqdeje70jlc86e2scc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

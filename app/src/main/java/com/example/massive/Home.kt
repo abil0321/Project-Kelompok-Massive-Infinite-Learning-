@@ -20,7 +20,7 @@ class Home : Fragment() {
         val text: TextView = binding.reciveUsername
         val value = arguments?.getString("name")
         if (value == null){
-            text.text = "Halo, Muhammad Jamaludin"
+            text.text = "Halo, Jamaludin"
         } else {
             text.text = "Halo, $value"
         }

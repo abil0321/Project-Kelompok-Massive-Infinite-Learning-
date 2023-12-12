@@ -184,7 +184,7 @@
                     android:fontFamily="@font/poppins_regular"
                     android:gravity="end"
                     android:text="Lanjut >"
-                    android:textSize="18sp" />
+                    android:textSize="15sp" />
 
             </LinearLayout>
 

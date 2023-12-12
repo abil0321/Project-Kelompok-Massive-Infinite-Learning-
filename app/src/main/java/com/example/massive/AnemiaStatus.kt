@@ -1,15 +1,21 @@
 package com.example.massive
 
 import android.content.Intent
+import android.graphics.Color
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.massive.databinding.ActivityAnemiaStatusBinding
 import com.github.mikephil.charting.charts.LineChart
+import com.github.mikephil.charting.components.AxisBase
 import com.github.mikephil.charting.components.XAxis
-import com.github.mikephil.charting.components.YAxis
 import com.github.mikephil.charting.data.Entry
 import com.github.mikephil.charting.data.LineData
 import com.github.mikephil.charting.data.LineDataSet
+import com.github.mikephil.charting.formatter.ValueFormatter
+import java.text.SimpleDateFormat
+import java.util.Date
+import java.util.Locale
+import kotlin.random.Random
 
 class AnemiaStatus : AppCompatActivity() {
     private lateinit var binding: ActivityAnemiaStatusBinding
@@ -26,30 +32,33 @@ class AnemiaStatus : AppCompatActivity() {
         binding.btnPerbaharui.setOnClickListener {
             startActivity(Intent(this, InputDataHb::class.java))
         }
-        lineChart = binding.lineChart
-        setupLineChart()
-    }
-    private fun setupLineChart() {
-        lineChart.setTouchEnabled(true)
-        lineChart.setPinchZoom(true)
+        lineChart = findViewById(R.id.lineChart)
 
-        val xAxis: XAxis = lineChart.xAxis
-        xAxis.position = XAxis.XAxisPosition.BOTTOM
-
-        val yAxisRight: YAxis = lineChart.axisRight
-        yAxisRight.isEnabled = false
+        val lineChart: LineChart = findViewById(R.id.lineChart)
 
         val entries = mutableListOf<Entry>()
-        entries.add(Entry(1f, 9f))
-        entries.add(Entry(2f, 15f))
-        entries.add(Entry(3f, 17f))
-        entries.add(Entry(5f, 20f))
+        val random = Random
+        for (i in 1..3) {
+            entries.add(Entry(i.toFloat(), random.nextFloat() * 18))
+    }
 
-        val dataSet = LineDataSet(entries, "Hemoglobin")
-
-        dataSet.setColors(intArrayOf(android.R.color.holo_purple), this)
+        val dataSet = LineDataSet(entries, "Grafik HB")
+        dataSet.color = Color.BLUE
+        dataSet.valueTextColor = Color.BLACK
 
         val lineData = LineData(dataSet)
+
         lineChart.data = lineData
+
+        val xAxis: XAxis = lineChart.xAxis
+        object : ValueFormatter() {
+            private val dateFormat = SimpleDateFormat("dd/MM", Locale.getDefault())
+
+            override fun getAxisLabel(value: Float, axis: AxisBase?): String {
+                val date = Date(value.toLong())
+                return dateFormat.format(date)
+            }
+        }.also { xAxis.valueFormatter = it }
+        xAxis.position = XAxis.XAxisPosition.BOTTOM
     }
 }

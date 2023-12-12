@@ -55,7 +55,7 @@
                         android:layout_height="35dp"
                         android:layout_marginEnd="20dp"
                         android:fontFamily="@font/poppins_semibold"
-                        android:text="Jodhy Herlambang"
+                        android:text="Jamaludin"
                         android:textColor="@color/Black"
                         android:textSize="20sp" />
 
@@ -91,7 +91,7 @@
                         android:layout_marginStart="20dp"
                         android:layout_marginTop="3dp"
                         android:fontFamily="@font/poppins_semibold"
-                        android:text="Jodhy"
+                        android:text="Jamal"
                         android:textColor="@color/Black"
                         android:textSize="15sp" />
 
@@ -118,7 +118,7 @@
                         android:layout_marginStart="20dp"
                         android:layout_marginTop="3dp"
                         android:fontFamily="@font/poppins_semibold"
-                        android:text="jalanyuk@gmail.com"
+                        android:text="test@gmail.com"
                         android:textColor="@color/Black"
                         android:textSize="15sp" />
 

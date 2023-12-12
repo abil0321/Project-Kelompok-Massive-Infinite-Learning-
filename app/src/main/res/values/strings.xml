@@ -73,5 +73,6 @@
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
     <string name="note_home_1">Anemia bukanlah batasan, tapi tantangan. Dengan perawatan yang tepat dan gaya hidup sehat, Anda bisa menghadapinya dengan tegar. Tetap bersemangat!</string>
+    <string name="default_web_client_id" />
 
 </resources>
