@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         backgroundImg.startAnimation(sideAnimation)
 
         Handler().postDelayed({
-            startActivity(Intent(this,Login::class.java))
+            startActivity(Intent(this,Register::class.java))
             finish()
         },3000)
     }
