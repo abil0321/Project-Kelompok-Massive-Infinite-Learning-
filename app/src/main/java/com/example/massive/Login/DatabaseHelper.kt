@@ -5,8 +5,9 @@ import android.content.Context
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
 
-class DatabaseHelper (private val context: Context): SQLiteOpenHelper(context, DATABASE_NAME, null, DATABASE_VERSION){
-    companion object{
+class DatabaseHelper(private val context: Context) :
+    SQLiteOpenHelper(context, DATABASE_NAME, null, DATABASE_VERSION) {
+    companion object {
         private const val DATABASE_NAME = "UserDatabase.db"
         private const val DATABASE_VERSION = 1
         private const val TABLE_NAME = "data"
@@ -23,13 +24,14 @@ class DatabaseHelper (private val context: Context): SQLiteOpenHelper(context, D
                 "$COLUMN_PASSWORD TEXT)")
         db?.execSQL(createTableQuery)
     }
+
     override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {
         val dropTableuery = "DROP TABLE IF EXISTS $TABLE_NAME"
         db?.execSQL(dropTableuery)
         onCreate(db)
     }
 
-    fun readUser(username: String, password: String):Boolean {
+    fun readUser(username: String, password: String): Boolean {
         val db = readableDatabase
         val selection = "$COLUMN_USERNAME = ? AND $COLUMN_PASSWORD = ?"
         val selectionArgs = arrayOf(username, password)
@@ -40,12 +42,12 @@ class DatabaseHelper (private val context: Context): SQLiteOpenHelper(context, D
         return userExists
     }
 
-    fun insertUser(username: String, password: String): Boolean {
+    fun insertUser(username: String, password: String): Long {
+        val contentValues = ContentValues().apply {
+            put(COLUMN_USERNAME, username)
+            put(COLUMN_PASSWORD, password)
+        }
         val db = writableDatabase
-        val contentValues = ContentValues()
-        contentValues.put(COLUMN_USERNAME, username)
-        contentValues.put(COLUMN_PASSWORD, password)
-        val result = db.insert(TABLE_NAME, null, contentValues)
-        return result.toInt() != -1
+        return db.insert(TABLE_NAME, null, contentValues)
     }
 }

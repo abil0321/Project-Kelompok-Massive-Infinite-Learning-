@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Massive"
         tools:targetApi="31">
         <activity
+            android:name=".Login.Regis"
+            android:exported="false" />
+        <activity
             android:name=".Info3Activity"
             android:exported="false" />
         <activity

@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/login"
-    tools:context=".Login.Login">
+    tools:context=".Login.Regis">
 
     <ImageView
         android:id="@+id/imageView2"
@@ -22,7 +22,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins_semibold"
-        android:text="Masuk"
+        android:text="Buat Akun"
         android:textColor="#EE0D50"
         android:textAlignment="center"
         android:textSize="24sp"
@@ -58,7 +58,7 @@
                 app:boxStrokeWidth="1dp">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/et_username"
+                    android:id="@+id/regis_username"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
@@ -81,7 +81,7 @@
                 app:endIconMode="password_toggle">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/et_password"
+                    android:id="@+id/regis_password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
@@ -92,31 +92,21 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <TextView
-                android:id="@+id/btn_lupa_sandi"
+                android:id="@+id/btn_punya_akun"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="15dp"
                 android:fontFamily="@font/poppins_regular"
-                android:text="Lupa kata sandi?"
+                android:text="Susah Punya akun? Login"
                 android:textColor="@color/Black"
                 android:textAlignment="textEnd"
                 android:textSize="14sp" />
 
-            <TextView
-                android:id="@+id/btn_belum_punya_akun"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:fontFamily="@font/poppins_regular"
-                android:text="Belum Punya Akun? Regis"
-                android:textColor="@color/Black"
-                android:textAlignment="textEnd"
-                android:textSize="14sp" />
 
         </LinearLayout>
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn_login"
+            android:id="@+id/btn_submit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="100dp"
@@ -124,7 +114,7 @@
             android:layout_marginBottom="20dp"
             android:background="@drawable/btn_background"
             android:fontFamily="@font/poppins_semibold"
-            android:text="Masuk"
+            android:text="Submit"
             android:textColor="@color/White"
             android:textSize="17sp" />
 

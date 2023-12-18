@@ -44,6 +44,12 @@ class Login : AppCompatActivity() {
         } else {
            Toast.makeText(this, "Data gagal ditambahkan", Toast.LENGTH_SHORT).show()
       } **/
+
+        binding.btnBelumPunyaAkun.setOnClickListener{
+            val intent = Intent(this, Regis::class.java)
+            startActivity(intent)
+            finish()
+        }
     }
 
     private fun loginDatabase(username: String, password: String){
@@ -54,7 +60,7 @@ class Login : AppCompatActivity() {
             startActivity(intent)
             finish()
         }else{
-            Toast.makeText(this, "Login Failed", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Perbaiki Email atau Passwordnya!", Toast.LENGTH_SHORT).show()
         }
     }
 
