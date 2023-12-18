@@ -6,8 +6,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.view.animation.AnimationUtils
 import android.widget.ImageView
-import com.example.massive.databinding.ActivityMainBinding
-import kotlinx.coroutines.delay
+import com.example.massive.Login.Login
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         backgroundImg.startAnimation(sideAnimation)
 
         Handler().postDelayed({
-            startActivity(Intent(this,Login::class.java))
+            startActivity(Intent(this, Login::class.java))
             finish()
         },3000)
     }

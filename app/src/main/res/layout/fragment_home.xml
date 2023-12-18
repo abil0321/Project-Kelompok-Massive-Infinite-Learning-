@@ -33,7 +33,7 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:fontFamily="@font/poppins_regular"
-                android:text="Jangan lupa minum tablet tambah darah ya!"
+                android:text="Jangan biarkan anemia menguasai, minum obat tambahan darah dengan disiplin."
                 android:textColor="@color/Black"
                 android:textSize="14sp" />
 
@@ -48,7 +48,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginVertical="30dp"
+                    android:layout_marginVertical="20dp"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
                     android:background="@drawable/bckgrnd"
@@ -139,6 +139,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
                 android:layout_marginHorizontal="20dp"
                 android:paddingVertical="10dp"
                 android:paddingHorizontal="15dp"

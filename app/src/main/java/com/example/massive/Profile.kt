@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.massive.Login.Login
 import com.example.massive.databinding.FragmentProfileBinding
 
 class Profile : Fragment() {
