@@ -4,11 +4,12 @@ import android.content.ContentValues
 import android.content.Context
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
+import com.google.android.material.textfield.TextInputEditText
 
 class DatabaseHelper(private val context: Context) :
     SQLiteOpenHelper(context, DATABASE_NAME, null, DATABASE_VERSION) {
     companion object {
-        private const val DATABASE_NAME = "UserDatabase.db"
+        private const val DATABASE_NAME = "UserDatabase1.db"
         private const val DATABASE_VERSION = 1
         private const val TABLE_NAME = "data"
         private const val COLUMN_ID = "id"
@@ -38,6 +39,28 @@ class DatabaseHelper(private val context: Context) :
         val cursor = db.query(TABLE_NAME, null, selection, selectionArgs, null, null, null)
 
         val userExists = cursor.count > 0
+        cursor.close()
+        return userExists
+    }
+
+    fun readUserName(username: String): Boolean {
+        val db = readableDatabase
+        val selection = "$COLUMN_USERNAME = ?"
+        val selectionArgs = arrayOf(username)
+        val cursor = db.query(TABLE_NAME, null, selection, selectionArgs, null, null, null)
+
+        val userExists = cursor.count <= 0
+        cursor.close()
+        return userExists
+    }
+
+    fun readUserPassword(password: String): Boolean {
+        val db = readableDatabase
+        val selection = "$COLUMN_PASSWORD = ?"
+        val selectionArgs = arrayOf(password)
+        val cursor = db.query(TABLE_NAME, null, selection, selectionArgs, null, null, null)
+
+        val userExists = cursor.count == 0
         cursor.close()
         return userExists
     }
